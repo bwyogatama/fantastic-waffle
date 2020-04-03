@@ -1,0 +1,48 @@
+    58626857500   0   CorePair           L1D0_Repl     M0>M0     [0xea5fc0, line 0xea5fc0] 
+58759105000: system.l3_tlb: Translated 0xaaffe0 -> 0xea5fe0.
+58759106000: system.l2_tlb: Translated 0xaaffe0 -> 0xea5fe0.
+58759107000: system.l1_tlb0: Translated 0xaaffe0 -> 0xea5fe0.
+58759107000: system.cpu2.CUs0-port0: CU0: DTLBPort received 0xaaffe0->0xea5fe0
+58759107000: system.cpu2.CUs0-port0: CU0: WF[0][0]: index 0, addr 0xea5fe0 data scheduled
+58759112000: system.cpu2.CUs0-port0: CU0: WF[0][0]: gpuDynInst: 291, index 0, addr 0xea5fe0 data req sent!
+    58759112000   2       Coal               Begin       >       [0xea5fe0, line 0xea5fc0] ST
+58759112000: system.ruby.tcp_cntrl0.coalescer: adding write inst 291 at line 0xea5fc0 to the pending write instruction list
+58759112001: system.cpu2.CUs0-port0: CU0: WF[0][0]: gpuDynInst: 291, index 0, addr 0xea5fe0 received!
+58759112001: system.cpu2.CUs0-port0: Response for addr 0xea5fe0, index 0
+    58759112001   0        TCP        StoreThrough      I>I      [0xea5fc0, line 0xea5fc0] write++ = 1
+    58759114000   0        TCC        WrVicBlkBack      I>W      [0xea5fc0, line 0xea5fc0] 
+58759117001: system.cpu2.CUs0-port0: CU0: WF[0][0]: Response for addr 0xea5fe0, index 0
+58759123000: system.ruby.tcp_cntrl0.coalescer: writeCompleteCallback for address 0xea5fc0 instSeqNum = 291
+    58759123000   0        TCP           TCC_AckWB      I>I      [0xea5fc0, line 0xea5fc0] 
+58759144000: system.ruby.tcc_cntrl0.coalescer: Flush addr 0xea5fc0
+    58759144000   0        TCC               Flush      W>W      [0xea5fc0, line 0xea5fc0] 
+    58759176000   0        TCC             L2Flush      W>WI     [0xea5fc0, line 0xea5fc0] 
+    58759238000   0  Directory        WriteThrough      U>BM_PM  [0xea5fc0, line 0xea5fc0]  dc: Acks remaining: 1
+    58759240500   0        TCC               WBAck     WI>I      [0xea5fc0, line 0xea5fc0] 
+    58759255000   0   CorePair          PrbInvData     M0>I      [0xea5fc0, line 0xea5fc0] 
+    58759297500   0  Directory             MemData  BM_PM>BM_Pm  [0xea5fc0, line 0xea5fc0] 
+    58759317000   0  Directory          CPUPrbResp  BM_Pm>BM_Pm  [0xea5fc0, line 0xea5fc0]  Acks remaining: 0 Check: Acks remaining: 0
+    58759317500   0  Directory   ProbeAcksComplete  BM_Pm>B      [0xea5fc0, line 0xea5fc0] 
+    58759318000   0  Directory UnblockWriteThrough      B>U      [0xea5fc0, line 0xea5fc0] 
+    58845976000   0        Seq               Begin       >       [0xea5fe0, line 0xea5fc0] LD
+    58845976500   0   CorePair      C0_Load_L1miss      I>I_E0S  [0xea5fc0, line 0xea5fc0] 
+    58846038500   0  Directory               RdBlk      U>B_PM   [0xea5fc0, line 0xea5fc0]  sc: Acks remaining: 1
+    58846055500   0        TCC              PrbInv      I>I      [0xea5fc0, line 0xea5fc0] 
+    58846058000   0  Directory          CPUPrbResp   B_PM>B_PM   [0xea5fc0, line 0xea5fc0]  Acks remaining: 0 Check: Acks remaining: 0
+    58846058500   0  Directory   ProbeAcksComplete   B_PM>B_M    [0xea5fc0, line 0xea5fc0] 
+    58846098000   0  Directory             MemData    B_M>B      [0xea5fc0, line 0xea5fc0] 
+    58846115000   0        Seq                Done       >       [0xea5fe0, line 0xea5fc0] 278 cycles
+    58846115000   0   CorePair             NB_AckE  I_E0S>E0     [0xea5fc0, line 0xea5fc0] 
+    58846177000   0  Directory         CoreUnblock      B>U      [0xea5fc0, line 0xea5fc0] 
+    58847154500   0        Seq               Begin       >       [0xea5fd8, line 0xea5fc0] LD
+    58847155000   0        Seq                Done       >       [0xea5fd8, line 0xea5fc0] 1 cycles
+    58847155000   0   CorePair       C0_Load_L1hit     E0>E0     [0xea5fc0, line 0xea5fc0] 
+    58847169000   0        Seq               Begin       >       [0xea5fd8, line 0xea5fc0] LD
+    58847169500   0        Seq                Done       >       [0xea5fd8, line 0xea5fc0] 1 cycles
+    58847169500   0   CorePair       C0_Load_L1hit     E0>E0     [0xea5fc0, line 0xea5fc0] 
+    58847182500   0        Seq               Begin       >       [0xea5ff8, line 0xea5fc0] LD
+    58847183000   0        Seq                Done       >       [0xea5ff8, line 0xea5fc0] 1 cycles
+    58847183000   0   CorePair       C0_Load_L1hit     E0>E0     [0xea5fc0, line 0xea5fc0] 
+    58847206500   0        Seq               Begin       >       [0xea5fe0, line 0xea5fc0] ST
+    58847207000   0        Seq                Done       >       [0xea5fe0, line 0xea5fc0] 1 cycles
+    58847207000   0   CorePair      C0_Store_L1hit     E0>M0     [0xea5fc0, line 0xea5fc0] 

@@ -1,0 +1,32 @@
+    58626857500   0   CorePair           L1D0_Repl     M0>M0     [0xea5fc0, line 0xea5fc0] 
+58759105000: system.l3_tlb: Translated 0xaaffe0 -> 0xea5fe0.
+58759106000: system.l2_tlb: Translated 0xaaffe0 -> 0xea5fe0.
+58759107000: system.l1_tlb0: Translated 0xaaffe0 -> 0xea5fe0.
+58759107000: system.cpu2.CUs0-port0: CU0: DTLBPort received 0xaaffe0->0xea5fe0
+58759107000: system.cpu2.CUs0-port0: CU0: WF[0][0]: index 0, addr 0xea5fe0 data scheduled
+58759112000: system.cpu2.CUs0-port0: CU0: WF[0][0]: gpuDynInst: 291, index 0, addr 0xea5fe0 data req sent!
+    58759112000   2       Coal               Begin       >       [0xea5fe0, line 0xea5fc0] ST
+58759112000: system.ruby.tcp_cntrl0.coalescer: adding write inst 291 at line 0xea5fc0 to the pending write instruction list
+58759112001: system.cpu2.CUs0-port0: CU0: WF[0][0]: gpuDynInst: 291, index 0, addr 0xea5fe0 received!
+58759112001: system.cpu2.CUs0-port0: Response for addr 0xea5fe0, index 0
+    58759112001   0        TCP        StoreThrough      I>I      [0xea5fc0, line 0xea5fc0] write++ = 1
+    58759114000   0        TCC        WrVicBlkBack      I>W      [0xea5fc0, line 0xea5fc0] 
+58759117001: system.cpu2.CUs0-port0: CU0: WF[0][0]: Response for addr 0xea5fe0, index 0
+58759123000: system.ruby.tcp_cntrl0.coalescer: writeCompleteCallback for address 0xea5fc0 instSeqNum = 291
+    58759123000   0        TCP           TCC_AckWB      I>I      [0xea5fc0, line 0xea5fc0] 
+    58885980000   0        Seq               Begin       >       [0xea5fe0, line 0xea5fc0] LD
+    58885980500   0   CorePair      C0_Load_L1miss     M0>M0_F   [0xea5fc0, line 0xea5fc0] 
+    58885989500   0        Seq                Done       >       [0xea5fe0, line 0xea5fc0] 19 cycles
+    58885989500   0   CorePair          L2_to_L1D0   M0_F>M0     [0xea5fc0, line 0xea5fc0] 
+    58887574000   0        Seq               Begin       >       [0xea5fd8, line 0xea5fc0] LD
+    58887574500   0        Seq                Done       >       [0xea5fd8, line 0xea5fc0] 1 cycles
+    58887574500   0   CorePair       C0_Load_L1hit     M0>M0     [0xea5fc0, line 0xea5fc0] 
+    58887588500   0        Seq               Begin       >       [0xea5fd8, line 0xea5fc0] LD
+    58887589000   0        Seq                Done       >       [0xea5fd8, line 0xea5fc0] 1 cycles
+    58887589000   0   CorePair       C0_Load_L1hit     M0>M0     [0xea5fc0, line 0xea5fc0] 
+    58887602000   0        Seq               Begin       >       [0xea5ff8, line 0xea5fc0] LD
+    58887602500   0        Seq                Done       >       [0xea5ff8, line 0xea5fc0] 1 cycles
+    58887602500   0   CorePair       C0_Load_L1hit     M0>M0     [0xea5fc0, line 0xea5fc0] 
+    58887626000   0        Seq               Begin       >       [0xea5fe0, line 0xea5fc0] ST
+    58887626500   0        Seq                Done       >       [0xea5fe0, line 0xea5fc0] 1 cycles
+    58887626500   0   CorePair      C0_Store_L1hit     M0>M0     [0xea5fc0, line 0xea5fc0] 

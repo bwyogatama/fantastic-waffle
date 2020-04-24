@@ -1,0 +1,2710 @@
+warn: system.ruby.network adopting orphan SimObject param 'int_links'
+warn: system.ruby.network adopting orphan SimObject param 'ext_links'
+gem5 Simulator System.  http://gem5.org
+gem5 is copyrighted software; use the --copyright option for details.
+
+gem5 compiled Apr 23 2020 16:47:49
+gem5 started Apr 23 2020 19:31:45
+gem5 executing on barolo, pid 2929809
+command line: build/GCN3_X86/gem5.opt --debug-flags=HSAPacketProcessor,HSADriver,GPUDriver configs/example/apu_se_mod.py -n2 --num-gpus=2 --benchmark-root=/u/b/w/bwyogatama/Research/Scheduling/gem5_clean/gem5/HSA -c vector_copy4.out --options=/u/b/w/bwyogatama/Research/Scheduling/gem5_clean/gem5/HSA/vector_copy.brig
+
+Num SQC =  1 Num scalar caches =  1 Num CU =  4
+Num GPUs =  2
+TCC_bits = 0
+Num Dirs = 1
+<orphan System>.ruby.cp_cntrl0
+<orphan System>.ruby.tcp_cntrl0
+<orphan System>.ruby.tcp_cntrl1
+<orphan System>.ruby.tcp_cntrl2
+<orphan System>.ruby.tcp_cntrl3
+<orphan System>.ruby.sqc_cntrl0
+<orphan System>.ruby.scalar_cntrl0
+<orphan System>.ruby.tcc_cntrl0
+<orphan System>.dma_cntrl0
+<orphan System>.dma_cntrl1
+<orphan System>.ruby.tcp_cntrl4
+<orphan System>.ruby.tcp_cntrl5
+<orphan System>.ruby.tcp_cntrl6
+<orphan System>.ruby.tcp_cntrl7
+<orphan System>.ruby.sqc_cntrl1
+<orphan System>.ruby.scalar_cntrl1
+<orphan System>.ruby.tcc_cntrl1
+<orphan System>.dma_cntrl2
+<orphan System>.dma_cntrl3
+Global frequency set at 1000000000000 ticks per second
+warn: DRAM device capacity (8192 Mbytes) does not match the address range assigned (512 Mbytes)
+      0: system.cpu2.gpu_cmd_proc.hsapp: HSAPacketProcessor:
+      0: system.cpu3.gpu_cmd_proc.hsapp: HSAPacketProcessor:
+      0: system.cpu0.workload.drivers: Constructing KFD: device
+Forcing maxCoalescedReqs to 32 (TLB assoc.) 
+Forcing maxCoalescedReqs to 32 (TLB assoc.) 
+Forcing maxCoalescedReqs to 32 (TLB assoc.) 
+Forcing maxCoalescedReqs to 32 (TLB assoc.) 
+Forcing maxCoalescedReqs to 32 (TLB assoc.) 
+Forcing maxCoalescedReqs to 32 (TLB assoc.) 
+Forcing maxCoalescedReqs to 32 (TLB assoc.) 
+Forcing maxCoalescedReqs to 32 (TLB assoc.) 
+Forcing maxCoalescedReqs to 32 (TLB assoc.) 
+Forcing maxCoalescedReqs to 32 (TLB assoc.) 
+Forcing maxCoalescedReqs to 32 (TLB assoc.) 
+Forcing maxCoalescedReqs to 32 (TLB assoc.) 
+Forcing maxCoalescedReqs to 32 (TLB assoc.) 
+Forcing maxCoalescedReqs to 32 (TLB assoc.) 
+Forcing maxCoalescedReqs to 32 (TLB assoc.) 
+Forcing maxCoalescedReqs to 32 (TLB assoc.) 
+0: system.remote_gdb: listening for remote gdb on port 7000
+0: system.remote_gdb: listening for remote gdb on port 7001
+info: Entering event queue @ 0.  Starting simulation...
+warn: Replacement policy updates recently became the responsibility of SLICC state machines. Make sure to setMRU() near callbacks in .sm files!
+warn: x86 cpuid family 0x0000: unimplemented function 7
+warn: ignoring syscall access(...)
+warn: ignoring syscall access(...)
+warn: ignoring syscall mprotect(...)
+warn: ignoring syscall access(...)
+warn: ignoring syscall mprotect(...)
+warn: ignoring syscall access(...)
+warn: ignoring syscall mprotect(...)
+warn: ignoring syscall access(...)
+warn: ignoring syscall mprotect(...)
+warn: ignoring syscall mprotect(...)
+warn: ignoring syscall mprotect(...)
+warn: ignoring syscall mprotect(...)
+warn: ignoring syscall mprotect(...)
+warn: ignoring syscall mprotect(...)
+warn: ignoring syscall access(...)
+warn: ignoring syscall mprotect(...)
+warn: ignoring syscall access(...)
+warn: ignoring syscall mprotect(...)
+warn: ignoring syscall access(...)
+warn: ignoring syscall mprotect(...)
+warn: ignoring syscall mprotect(...)
+warn: ignoring syscall access(...)
+warn: ignoring syscall mprotect(...)
+warn: ignoring syscall access(...)
+warn: ignoring syscall mprotect(...)
+warn: ignoring syscall access(...)
+warn: ignoring syscall mprotect(...)
+warn: ignoring syscall access(...)
+warn: ignoring syscall mprotect(...)
+warn: ignoring syscall access(...)
+warn: ignoring syscall mprotect(...)
+warn: ignoring syscall mprotect(...)
+warn: ignoring syscall mprotect(...)
+warn: ignoring syscall mprotect(...)
+warn: ignoring syscall mprotect(...)
+warn: ignoring syscall mprotect(...)
+warn: ignoring syscall mprotect(...)
+warn: ignoring syscall mprotect(...)
+warn: ignoring syscall mprotect(...)
+warn: ignoring syscall mprotect(...)
+warn: ignoring syscall mprotect(...)
+warn: ignoring syscall mprotect(...)
+warn: ignoring syscall mprotect(...)
+warn: ignoring syscall mprotect(...)
+warn: ignoring syscall mprotect(...)
+warn: ignoring syscall mprotect(...)
+warn: ignoring syscall mprotect(...)
+warn: ignoring syscall mprotect(...)
+warn: ignoring syscall mprotect(...)
+warn: ignoring syscall set_robust_list(...)
+warn: ignoring syscall rt_sigaction(...)
+      (further warnings will be suppressed)
+warn: ignoring syscall rt_sigprocmask(...)
+      (further warnings will be suppressed)
+warn: ignoring syscall mprotect(...)
+warn: ignoring syscall mprotect(...)
+17183287000: system.cpu0.workload.drivers: Opened kfd
+warn: ignoring syscall access(...)
+17459446500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_GET_PROCESS_APERTURES_NEW
+ioc_args->num_of_nodes: 2
+warn: fcntl: unsupported command 6
+warn: fcntl: unsupported command 6
+17478231000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_GET_VERSION
+Failed to get Processor Vendor. Setting to GenuineIntel
+warn: ignoring syscall sched_getaffinity(...)
+warn: ignoring syscall sched_setaffinity(...)
+warn: x86 cpuid family 0x0000: unimplemented function 4 returning 0x0, 0x0, 0x0, 0x0.
+warn: ignoring syscall sched_setaffinity(...)
+warn: x86 cpuid family 0x0000: unimplemented function 4 returning 0x0, 0x0, 0x0, 0x0.
+warn: ignoring syscall sched_setaffinity(...)
+warn: ignoring syscall access(...)
+17703167500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_GET_CLOCK_COUNTERS
+17707957000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_GET_CLOCK_COUNTERS
+17750705000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_GET_CLOCK_COUNTERS
+warn: ignoring syscall mprotect(...)
+warn: ignoring syscall mprotect(...)
+warn: ignoring syscall mprotect(...)
+warn: ignoring syscall mprotect(...)
+warn: unimplemented ioctl: AMDKFD_IOC_ALLOC_MEMORY_OF_SCRATCH
+warn: mmap: writing to shared mmap region is currently unsupported. The write succeeds on the target, but it will not be propagated to the host or shared mappings
+warn: mmap: writing to shared mmap region is currently unsupported. The write succeeds on the target, but it will not be propagated to the host or shared mappings
+warn: ignoring syscall mprotect(...)
+warn: ignoring syscall mprotect(...)
+warn: ignoring syscall mprotect(...)
+34592340500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_QUEUE
+GPU ID: 2765
+args->doorbell_offset1: 0xc2b3400000000
+args->doorbell_offset2: 0xc2b3400000000000
+34592340500: system.cpu2.gpu_cmd_proc.hsapp: setDeviceQueueDesc:base = 0x7ffef42e6000, qID = 0, ze = 524288
+34592340500: global: Trying to map new queue, @ mapQIfSlotAvlbl
+34592340500: global: Trying to find empty HW queue, @ findEmptyHWQ
+34592340500: global: Mapped HSA queue 0 to hw queue 0: @ addQCntxt
+34592340500: system.cpu2.gpu_cmd_proc.hsapp: getCommandsFromHost: read-pointer offset[0x0], write-pointer offset[0x0] doorbell(0)[0x0] 
+34592340500: global: registerNewQueue: offset = 0, qID = 0, is_regd = true, AL size 1
+34592340500: system.cpu0.workload.drivers: Creating queue 1
+warn: mmap: writing to shared mmap region is currently unsupported. The write succeeds on the target, but it will not be propagated to the host or shared mappings
+34597627500: system.cpu0.workload.drivers: amdkfd doorbell mmap (start: 0, length: 0x1000,offset: 0x0)
+mem_state->getMmapEnd() = 140732992331776
+start = 140732992327680
+vm_pgoff: 0xc2b3400000000
+offset: 0x0
+GPU ID: 0xacd
+34597627500: system.cpu0.workload.drivers: amdkfd doorbell mapped to 7ffef4041000p
+34628261500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+34628261500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x0, offset: 0x8000000000000000)
+warn: mmap: writing to shared mmap region is currently unsupported. The write succeeds on the target, but it will not be propagated to the host or shared mappings
+34628909000: system.cpu0.workload.drivers: amdkfd mmap for events(start: 0, length: 0x9000,offset: 0x8000000000000000,  )
+eventPage = (nil)
+should_mmap = 1
+mem_state->getMmapEnd() = 140732992327680
+start = 140732992290816
+eventPage = 0x7ffef4038000
+34658085000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+34658085000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x1, offset: 0x8000000000000000)
+warn: ignoring syscall mprotect(...)
+warn: ClockedObject: Already in the requested power state, request ignored
+warn: ignoring syscall set_robust_list(...)
+warn: ignoring syscall mprotect(...)
+warn: ignoring syscall mprotect(...)
+34729023500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+34729023500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x2, offset: 0x8000000000000000)
+warn: ignoring syscall mprotect(...)
+warn: ignoring syscall mprotect(...)
+warn: ignoring syscall mprotect(...)
+warn: unimplemented ioctl: AMDKFD_IOC_ALLOC_MEMORY_OF_SCRATCH
+warn: mmap: writing to shared mmap region is currently unsupported. The write succeeds on the target, but it will not be propagated to the host or shared mappings
+warn: mmap: writing to shared mmap region is currently unsupported. The write succeeds on the target, but it will not be propagated to the host or shared mappings
+34946757500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_WAIT_EVENTS
+34946757500: system.cpu0.workload.drivers: amdkfd wait for events(wait on all: 0, timeout : 4294967294, num_events: 2)
+34946757500: system.cpu0.workload.drivers: 	amdkfd creating event list for thread  1
+34946757500: system.cpu0.workload.drivers: 	amdkfd wait for event 0
+34946757500: system.cpu0.workload.drivers: 	amdkfd wait for event 1
+34946757500: system.cpu0.workload.drivers: CPU 1 is put to sleep
+warn: ignoring syscall mprotect(...)
+warn: ignoring syscall mprotect(...)
+warn: ignoring syscall mprotect(...)
+41435414000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_QUEUE
+GPU ID: 2766
+args->doorbell_offset1: 0xc2b3800000000
+args->doorbell_offset2: 0xc2b3800000000000
+41435414000: system.cpu3.gpu_cmd_proc.hsapp: setDeviceQueueDesc:base = 0x7ffdeb746000, qID = 1, ze = 524288
+41435414000: global: Trying to map new queue, @ mapQIfSlotAvlbl
+41435414000: global: Trying to find empty HW queue, @ findEmptyHWQ
+41435414000: global: Mapped HSA queue 1 to hw queue 0: @ addQCntxt
+41435414000: system.cpu3.gpu_cmd_proc.hsapp: getCommandsFromHost: read-pointer offset[0x0], write-pointer offset[0x0] doorbell(0)[0x4] 
+41435414000: global: registerNewQueue: offset = 0x4, qID = 1, is_regd = true, AL size 1
+41435414000: system.cpu0.workload.drivers: Creating queue 2
+warn: mmap: writing to shared mmap region is currently unsupported. The write succeeds on the target, but it will not be propagated to the host or shared mappings
+41440452000: system.cpu0.workload.drivers: amdkfd doorbell mmap (start: 0, length: 0x1000,offset: 0x0)
+mem_state->getMmapEnd() = 140728550957056
+start = 140728550952960
+vm_pgoff: 0xc2b3800000000
+offset: 0x0
+GPU ID: 0xace
+41440452000: system.cpu0.workload.drivers: amdkfd doorbell mapped to 7ffdeb4a1000p
+41494136500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_SET_EVENTS
+41494136500: system.cpu0.workload.drivers: amdkfd set event 1
+41494136500: system.cpu0.workload.drivers: Signal event: Waking up CPU 1
+warn: ignoring syscall mprotect(...)
+41509410500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+41509410500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x3, offset: 0x8000000000000000)
+warn: ignoring syscall mprotect(...)
+warn: ignoring syscall mprotect(...)
+warn: ignoring syscall mprotect(...)
+41710496500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_WAIT_EVENTS
+41710496500: system.cpu0.workload.drivers: amdkfd wait for events(wait on all: 0, timeout : 4294967294, num_events: 2)
+41710496500: system.cpu0.workload.drivers: 	amdkfd wait for event 0
+41710496500: system.cpu0.workload.drivers: 	amdkfd wait for event 1
+41711089000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_WAIT_EVENTS
+41711089000: system.cpu0.workload.drivers: amdkfd wait for events(wait on all: 0, timeout : 4294967294, num_events: 2)
+41711089000: system.cpu0.workload.drivers: 	amdkfd wait for event 0
+41711089000: system.cpu0.workload.drivers: 	amdkfd wait for event 1
+41711089000: system.cpu0.workload.drivers: CPU 1 is put to sleep
+warn: mmap: writing to shared mmap region is currently unsupported. The write succeeds on the target, but it will not be propagated to the host or shared mappings
+warn: mmap: writing to shared mmap region is currently unsupported. The write succeeds on the target, but it will not be propagated to the host or shared mappings
+warn: ignoring syscall mprotect(...)
+warn: ignoring syscall mprotect(...)
+warn: ignoring syscall mprotect(...)
+48354863500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_QUEUE
+GPU ID: 2765
+args->doorbell_offset1: 0xc2b3400000000
+args->doorbell_offset2: 0xc2b3400000000000
+48354863500: system.cpu2.gpu_cmd_proc.hsapp: setDeviceQueueDesc:base = 0x7ffdeb3bf000, qID = 2, ze = 524288
+48354863500: global: Trying to map new queue, @ mapQIfSlotAvlbl
+48354863500: global: Trying to find empty HW queue, @ findEmptyHWQ
+48354863500: global: Mapped HSA queue 2 to hw queue 1: @ addQCntxt
+48354863500: system.cpu2.gpu_cmd_proc.hsapp: getCommandsFromHost: read-pointer offset[0x0], write-pointer offset[0x0] doorbell(0)[0x8] 
+48354863500: global: registerNewQueue: offset = 0x8, qID = 2, is_regd = true, AL size 2
+48354863500: system.cpu0.workload.drivers: Creating queue 3
+48389961000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_SET_EVENTS
+48389961000: system.cpu0.workload.drivers: amdkfd set event 1
+48389961000: system.cpu0.workload.drivers: Signal event: Waking up CPU 1
+warn: ignoring syscall mprotect(...)
+48408711500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+48408711500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x4, offset: 0x8000000000000000)
+warn: ignoring syscall mprotect(...)
+warn: ignoring syscall mprotect(...)
+warn: ignoring syscall mprotect(...)
+48484105000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+48484105000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x5, offset: 0x8000000000000000)
+warn: ignoring syscall mprotect(...)
+warn: ignoring syscall mprotect(...)
+warn: ignoring syscall mprotect(...)
+48601156000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_WAIT_EVENTS
+48601156000: system.cpu0.workload.drivers: amdkfd wait for events(wait on all: 0, timeout : 4294967294, num_events: 2)
+48601156000: system.cpu0.workload.drivers: 	amdkfd wait for event 0
+48601156000: system.cpu0.workload.drivers: 	amdkfd wait for event 1
+48601736000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_WAIT_EVENTS
+48601736000: system.cpu0.workload.drivers: amdkfd wait for events(wait on all: 0, timeout : 4294967294, num_events: 2)
+48601736000: system.cpu0.workload.drivers: 	amdkfd wait for event 0
+48601736000: system.cpu0.workload.drivers: 	amdkfd wait for event 1
+48601736000: system.cpu0.workload.drivers: CPU 1 is put to sleep
+HSA reported error!
+ In file: /home/jenkins/jenkins-root/workspace/compute-rocm-rel-1.6/external/hcc-tot/lib/hsa/unpinned_copy_engine.cpp
+At line: 123
+52680920000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+52680920000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x6, offset: 0x8000000000000000)
+52685124500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+52685124500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x7, offset: 0x8000000000000000)
+HSA reported error!
+ In file: /home/jenkins/jenkins-root/workspace/compute-rocm-rel-1.6/external/hcc-tot/lib/hsa/unpinned_copy_engine.cpp
+At line: 123
+52698643500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+52698643500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x8, offset: 0x8000000000000000)
+52702733000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+52702733000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x9, offset: 0x8000000000000000)
+HSA reported error!
+ In file: /home/jenkins/jenkins-root/workspace/compute-rocm-rel-1.6/external/hcc-tot/lib/hsa/unpinned_copy_engine.cpp
+At line: 123
+52721149000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+52721149000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0xa, offset: 0x8000000000000000)
+52725410500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+52725410500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0xb, offset: 0x8000000000000000)
+HSA reported error!
+ In file: /home/jenkins/jenkins-root/workspace/compute-rocm-rel-1.6/external/hcc-tot/lib/hsa/unpinned_copy_engine.cpp
+At line: 123
+52739118000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+52739118000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0xc, offset: 0x8000000000000000)
+52743326000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+52743326000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0xd, offset: 0x8000000000000000)
+warn: mmap: writing to shared mmap region is currently unsupported. The write succeeds on the target, but it will not be propagated to the host or shared mappings
+warn: mmap: writing to shared mmap region is currently unsupported. The write succeeds on the target, but it will not be propagated to the host or shared mappings
+warn: ignoring syscall mprotect(...)
+warn: ignoring syscall mprotect(...)
+warn: ignoring syscall mprotect(...)
+59457577500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_QUEUE
+GPU ID: 2766
+args->doorbell_offset1: 0xc2b3800000000
+args->doorbell_offset2: 0xc2b3800000000000
+59457577500: system.cpu3.gpu_cmd_proc.hsapp: setDeviceQueueDesc:base = 0x7ffdeafd7000, qID = 3, ze = 524288
+59457577500: global: Trying to map new queue, @ mapQIfSlotAvlbl
+59457577500: global: Trying to find empty HW queue, @ findEmptyHWQ
+59457577500: global: Mapped HSA queue 3 to hw queue 1: @ addQCntxt
+59457577500: system.cpu3.gpu_cmd_proc.hsapp: getCommandsFromHost: read-pointer offset[0x0], write-pointer offset[0x0] doorbell(0)[0xc] 
+59457577500: global: registerNewQueue: offset = 0xc, qID = 3, is_regd = true, AL size 2
+59457577500: system.cpu0.workload.drivers: Creating queue 4
+59493705500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_SET_EVENTS
+59493705500: system.cpu0.workload.drivers: amdkfd set event 1
+59493705500: system.cpu0.workload.drivers: Signal event: Waking up CPU 1
+warn: ignoring syscall mprotect(...)
+59509412000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+59509412000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0xe, offset: 0x8000000000000000)
+warn: ignoring syscall mprotect(...)
+warn: ignoring syscall mprotect(...)
+warn: ignoring syscall mprotect(...)
+59585813500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+59585813500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0xf, offset: 0x8000000000000000)
+warn: ignoring syscall mprotect(...)
+warn: ignoring syscall mprotect(...)
+warn: ignoring syscall mprotect(...)
+59711330500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_WAIT_EVENTS
+59711330500: system.cpu0.workload.drivers: amdkfd wait for events(wait on all: 0, timeout : 4294967294, num_events: 2)
+59711330500: system.cpu0.workload.drivers: 	amdkfd wait for event 0
+59711330500: system.cpu0.workload.drivers: 	amdkfd wait for event 1
+59712006000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_WAIT_EVENTS
+59712006000: system.cpu0.workload.drivers: amdkfd wait for events(wait on all: 0, timeout : 4294967294, num_events: 2)
+59712006000: system.cpu0.workload.drivers: 	amdkfd wait for event 0
+59712006000: system.cpu0.workload.drivers: 	amdkfd wait for event 1
+59712006000: system.cpu0.workload.drivers: CPU 1 is put to sleep
+HSA reported error!
+ In file: /home/jenkins/jenkins-root/workspace/compute-rocm-rel-1.6/external/hcc-tot/lib/hsa/unpinned_copy_engine.cpp
+At line: 123
+63780904500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+63780904500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x10, offset: 0x8000000000000000)
+63785455000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+63785455000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x11, offset: 0x8000000000000000)
+HSA reported error!
+ In file: /home/jenkins/jenkins-root/workspace/compute-rocm-rel-1.6/external/hcc-tot/lib/hsa/unpinned_copy_engine.cpp
+At line: 123
+63798611500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+63798611500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x12, offset: 0x8000000000000000)
+63802913500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+63802913500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x13, offset: 0x8000000000000000)
+HSA reported error!
+ In file: /home/jenkins/jenkins-root/workspace/compute-rocm-rel-1.6/external/hcc-tot/lib/hsa/unpinned_copy_engine.cpp
+At line: 123
+63820572000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+63820572000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x14, offset: 0x8000000000000000)
+63825444500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+63825444500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x15, offset: 0x8000000000000000)
+HSA reported error!
+ In file: /home/jenkins/jenkins-root/workspace/compute-rocm-rel-1.6/external/hcc-tot/lib/hsa/unpinned_copy_engine.cpp
+At line: 123
+63838662000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+63838662000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x16, offset: 0x8000000000000000)
+63843599000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+63843599000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x17, offset: 0x8000000000000000)
+63868018500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+63868018500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x18, offset: 0x8000000000000000)
+63873691500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+63873691500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x19, offset: 0x8000000000000000)
+63878347000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+63878347000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x1a, offset: 0x8000000000000000)
+63883261500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+63883261500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x1b, offset: 0x8000000000000000)
+63887535500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+63887535500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x1c, offset: 0x8000000000000000)
+63892465500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+63892465500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x1d, offset: 0x8000000000000000)
+63896804000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+63896804000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x1e, offset: 0x8000000000000000)
+63901187000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+63901187000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x1f, offset: 0x8000000000000000)
+63905303000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+63905303000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x20, offset: 0x8000000000000000)
+63909998500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+63909998500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x21, offset: 0x8000000000000000)
+63914871500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+63914871500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x22, offset: 0x8000000000000000)
+63919217000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+63919217000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x23, offset: 0x8000000000000000)
+63923293500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+63923293500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x24, offset: 0x8000000000000000)
+63927894500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+63927894500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x25, offset: 0x8000000000000000)
+63932376000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+63932376000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x26, offset: 0x8000000000000000)
+63936923000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+63936923000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x27, offset: 0x8000000000000000)
+63941160000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+63941160000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x28, offset: 0x8000000000000000)
+63946345000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+63946345000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x29, offset: 0x8000000000000000)
+63950981000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+63950981000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x2a, offset: 0x8000000000000000)
+63955272000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+63955272000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x2b, offset: 0x8000000000000000)
+63959665500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+63959665500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x2c, offset: 0x8000000000000000)
+63963958500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+63963958500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x2d, offset: 0x8000000000000000)
+63968156000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+63968156000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x2e, offset: 0x8000000000000000)
+63972885000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+63972885000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x2f, offset: 0x8000000000000000)
+63977251500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+63977251500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x30, offset: 0x8000000000000000)
+63981845500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+63981845500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x31, offset: 0x8000000000000000)
+63986451000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+63986451000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x32, offset: 0x8000000000000000)
+63991209000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+63991209000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x33, offset: 0x8000000000000000)
+63995779000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+63995779000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x34, offset: 0x8000000000000000)
+64000340500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+64000340500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x35, offset: 0x8000000000000000)
+64005020500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+64005020500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x36, offset: 0x8000000000000000)
+64009602500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+64009602500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x37, offset: 0x8000000000000000)
+64013953500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+64013953500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x38, offset: 0x8000000000000000)
+64019974000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+64019974000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x39, offset: 0x8000000000000000)
+64023838500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+64023838500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x3a, offset: 0x8000000000000000)
+64028274000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+64028274000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x3b, offset: 0x8000000000000000)
+64032779000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+64032779000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x3c, offset: 0x8000000000000000)
+64037649000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+64037649000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x3d, offset: 0x8000000000000000)
+64042111500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+64042111500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x3e, offset: 0x8000000000000000)
+64047071000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+64047071000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x3f, offset: 0x8000000000000000)
+64051574500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+64051574500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x40, offset: 0x8000000000000000)
+64056082500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+64056082500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x41, offset: 0x8000000000000000)
+64060601000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+64060601000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x42, offset: 0x8000000000000000)
+64065263500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+64065263500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x43, offset: 0x8000000000000000)
+64069888500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+64069888500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x44, offset: 0x8000000000000000)
+64074591500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+64074591500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x45, offset: 0x8000000000000000)
+64079170000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+64079170000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x46, offset: 0x8000000000000000)
+64084629500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+64084629500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x47, offset: 0x8000000000000000)
+64089083500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+64089083500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x48, offset: 0x8000000000000000)
+64093711500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+64093711500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x49, offset: 0x8000000000000000)
+64098328000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+64098328000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x4a, offset: 0x8000000000000000)
+64102855500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+64102855500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x4b, offset: 0x8000000000000000)
+64107515000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+64107515000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x4c, offset: 0x8000000000000000)
+64112102500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+64112102500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x4d, offset: 0x8000000000000000)
+64117459500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+64117459500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x4e, offset: 0x8000000000000000)
+64122177500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+64122177500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x4f, offset: 0x8000000000000000)
+64126691000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+64126691000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x50, offset: 0x8000000000000000)
+64131478000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+64131478000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x51, offset: 0x8000000000000000)
+64135942500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+64135942500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x52, offset: 0x8000000000000000)
+64140765500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+64140765500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x53, offset: 0x8000000000000000)
+64145297000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+64145297000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x54, offset: 0x8000000000000000)
+64149826500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+64149826500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x55, offset: 0x8000000000000000)
+64154611500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+64154611500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x56, offset: 0x8000000000000000)
+64159210500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+64159210500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x57, offset: 0x8000000000000000)
+64164201000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+64164201000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x58, offset: 0x8000000000000000)
+64171145000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+64171145000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x59, offset: 0x8000000000000000)
+64175229000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+64175229000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x5a, offset: 0x8000000000000000)
+64179879500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+64179879500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x5b, offset: 0x8000000000000000)
+64184404000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+64184404000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x5c, offset: 0x8000000000000000)
+64189262000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+64189262000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x5d, offset: 0x8000000000000000)
+64193832000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+64193832000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x5e, offset: 0x8000000000000000)
+64198999000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+64198999000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x5f, offset: 0x8000000000000000)
+64203452500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+64203452500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x60, offset: 0x8000000000000000)
+64208366000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+64208366000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x61, offset: 0x8000000000000000)
+64212928000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+64212928000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x62, offset: 0x8000000000000000)
+64217539000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+64217539000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x63, offset: 0x8000000000000000)
+64222401500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+64222401500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x64, offset: 0x8000000000000000)
+64227085000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+64227085000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x65, offset: 0x8000000000000000)
+64231655000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+64231655000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x66, offset: 0x8000000000000000)
+64236265000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+64236265000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x67, offset: 0x8000000000000000)
+64240651500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+64240651500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x68, offset: 0x8000000000000000)
+64245556500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+64245556500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x69, offset: 0x8000000000000000)
+64250124000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+64250124000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x6a, offset: 0x8000000000000000)
+64255003500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+64255003500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x6b, offset: 0x8000000000000000)
+64259587500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+64259587500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x6c, offset: 0x8000000000000000)
+64264307000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+64264307000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x6d, offset: 0x8000000000000000)
+64269071500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+64269071500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x6e, offset: 0x8000000000000000)
+64274204500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+64274204500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x6f, offset: 0x8000000000000000)
+64278953000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+64278953000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x70, offset: 0x8000000000000000)
+64283642000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+64283642000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x71, offset: 0x8000000000000000)
+64288031500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+64288031500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x72, offset: 0x8000000000000000)
+64292707000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+64292707000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x73, offset: 0x8000000000000000)
+64297179000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+64297179000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x74, offset: 0x8000000000000000)
+64302223000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+64302223000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x75, offset: 0x8000000000000000)
+64306820000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+64306820000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x76, offset: 0x8000000000000000)
+64311408500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+64311408500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x77, offset: 0x8000000000000000)
+64315999000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+64315999000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x78, offset: 0x8000000000000000)
+64320584000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+64320584000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x79, offset: 0x8000000000000000)
+64325198000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+64325198000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x7a, offset: 0x8000000000000000)
+64330046500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+64330046500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x7b, offset: 0x8000000000000000)
+64334499000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+64334499000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x7c, offset: 0x8000000000000000)
+64339398500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+64339398500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x7d, offset: 0x8000000000000000)
+64343951000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+64343951000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x7e, offset: 0x8000000000000000)
+64348783000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+64348783000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x7f, offset: 0x8000000000000000)
+64353503000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+64353503000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x80, offset: 0x8000000000000000)
+64358459500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+64358459500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x81, offset: 0x8000000000000000)
+64363208000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+64363208000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x82, offset: 0x8000000000000000)
+64367724000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+64367724000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x83, offset: 0x8000000000000000)
+64372257500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+64372257500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x84, offset: 0x8000000000000000)
+64377025500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+64377025500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x85, offset: 0x8000000000000000)
+64381410500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+64381410500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x86, offset: 0x8000000000000000)
+64386174500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+64386174500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x87, offset: 0x8000000000000000)
+64390641000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+64390641000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x88, offset: 0x8000000000000000)
+64395447500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+64395447500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x89, offset: 0x8000000000000000)
+64400287500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+64400287500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x8a, offset: 0x8000000000000000)
+64404871500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+64404871500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x8b, offset: 0x8000000000000000)
+64409507500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+64409507500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x8c, offset: 0x8000000000000000)
+64414240000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+64414240000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x8d, offset: 0x8000000000000000)
+64418983500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+64418983500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x8e, offset: 0x8000000000000000)
+64424253000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+64424253000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x8f, offset: 0x8000000000000000)
+64428619500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+64428619500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x90, offset: 0x8000000000000000)
+64433211500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+64433211500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x91, offset: 0x8000000000000000)
+64437883500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+64437883500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x92, offset: 0x8000000000000000)
+64442990000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+64442990000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x93, offset: 0x8000000000000000)
+64447658500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+64447658500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x94, offset: 0x8000000000000000)
+64452367500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+64452367500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x95, offset: 0x8000000000000000)
+64456976000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+64456976000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x96, offset: 0x8000000000000000)
+64461638500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+64461638500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x97, offset: 0x8000000000000000)
+64466210500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+64466210500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x98, offset: 0x8000000000000000)
+64474371000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+64474371000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x99, offset: 0x8000000000000000)
+64478135000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+64478135000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x9a, offset: 0x8000000000000000)
+64482130500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+64482130500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x9b, offset: 0x8000000000000000)
+64487014500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+64487014500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x9c, offset: 0x8000000000000000)
+64491742500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+64491742500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x9d, offset: 0x8000000000000000)
+64496368000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+64496368000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x9e, offset: 0x8000000000000000)
+64501154500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+64501154500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x9f, offset: 0x8000000000000000)
+64506016000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+64506016000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0xa0, offset: 0x8000000000000000)
+64510801000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+64510801000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0xa1, offset: 0x8000000000000000)
+64515201000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+64515201000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0xa2, offset: 0x8000000000000000)
+64519945500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+64519945500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0xa3, offset: 0x8000000000000000)
+64524752500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+64524752500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0xa4, offset: 0x8000000000000000)
+64529345500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+64529345500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0xa5, offset: 0x8000000000000000)
+64534111000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+64534111000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0xa6, offset: 0x8000000000000000)
+64539321500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+64539321500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0xa7, offset: 0x8000000000000000)
+64543870500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+64543870500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0xa8, offset: 0x8000000000000000)
+64548615000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+64548615000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0xa9, offset: 0x8000000000000000)
+64553255000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+64553255000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0xaa, offset: 0x8000000000000000)
+64557753000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+64557753000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0xab, offset: 0x8000000000000000)
+64562217500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+64562217500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0xac, offset: 0x8000000000000000)
+64566794500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+64566794500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0xad, offset: 0x8000000000000000)
+64571711000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+64571711000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0xae, offset: 0x8000000000000000)
+64576483500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+64576483500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0xaf, offset: 0x8000000000000000)
+64581035500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+64581035500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0xb0, offset: 0x8000000000000000)
+64585813500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+64585813500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0xb1, offset: 0x8000000000000000)
+64590457500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+64590457500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0xb2, offset: 0x8000000000000000)
+64595331500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+64595331500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0xb3, offset: 0x8000000000000000)
+64600169000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+64600169000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0xb4, offset: 0x8000000000000000)
+64604959500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+64604959500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0xb5, offset: 0x8000000000000000)
+64609594500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+64609594500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0xb6, offset: 0x8000000000000000)
+64614808000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+64614808000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0xb7, offset: 0x8000000000000000)
+64619914500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+64619914500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0xb8, offset: 0x8000000000000000)
+64624642000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+64624642000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0xb9, offset: 0x8000000000000000)
+64629360000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+64629360000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0xba, offset: 0x8000000000000000)
+64634337000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+64634337000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0xbb, offset: 0x8000000000000000)
+64638959000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+64638959000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0xbc, offset: 0x8000000000000000)
+64643804500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+64643804500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0xbd, offset: 0x8000000000000000)
+64648466000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+64648466000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0xbe, offset: 0x8000000000000000)
+64653076500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+64653076500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0xbf, offset: 0x8000000000000000)
+64657555000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+64657555000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0xc0, offset: 0x8000000000000000)
+64662158500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+64662158500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0xc1, offset: 0x8000000000000000)
+64667058000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+64667058000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0xc2, offset: 0x8000000000000000)
+64671953000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+64671953000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0xc3, offset: 0x8000000000000000)
+64676521500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+64676521500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0xc4, offset: 0x8000000000000000)
+64681232500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+64681232500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0xc5, offset: 0x8000000000000000)
+64685865500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+64685865500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0xc6, offset: 0x8000000000000000)
+64691189500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+64691189500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0xc7, offset: 0x8000000000000000)
+64695883500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+64695883500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0xc8, offset: 0x8000000000000000)
+64700373500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+64700373500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0xc9, offset: 0x8000000000000000)
+64705100000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+64705100000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0xca, offset: 0x8000000000000000)
+64709665500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+64709665500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0xcb, offset: 0x8000000000000000)
+64714494000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+64714494000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0xcc, offset: 0x8000000000000000)
+64719428000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+64719428000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0xcd, offset: 0x8000000000000000)
+64724111000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+64724111000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0xce, offset: 0x8000000000000000)
+64729063000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+64729063000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0xcf, offset: 0x8000000000000000)
+64733902500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+64733902500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0xd0, offset: 0x8000000000000000)
+64738575000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+64738575000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0xd1, offset: 0x8000000000000000)
+64743466000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+64743466000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0xd2, offset: 0x8000000000000000)
+64747987500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+64747987500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0xd3, offset: 0x8000000000000000)
+64752723500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+64752723500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0xd4, offset: 0x8000000000000000)
+64757597000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+64757597000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0xd5, offset: 0x8000000000000000)
+64762564500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+64762564500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0xd6, offset: 0x8000000000000000)
+64767854000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+64767854000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0xd7, offset: 0x8000000000000000)
+64772350500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+64772350500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0xd8, offset: 0x8000000000000000)
+64776906500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+64776906500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0xd9, offset: 0x8000000000000000)
+64782017500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+64782017500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0xda, offset: 0x8000000000000000)
+64786657500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+64786657500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0xdb, offset: 0x8000000000000000)
+64791211500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+64791211500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0xdc, offset: 0x8000000000000000)
+64795781000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+64795781000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0xdd, offset: 0x8000000000000000)
+64800412000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+64800412000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0xde, offset: 0x8000000000000000)
+64805492500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+64805492500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0xdf, offset: 0x8000000000000000)
+64810293500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+64810293500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0xe0, offset: 0x8000000000000000)
+64815075500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+64815075500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0xe1, offset: 0x8000000000000000)
+64819612500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+64819612500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0xe2, offset: 0x8000000000000000)
+64824203000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+64824203000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0xe3, offset: 0x8000000000000000)
+64828839000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+64828839000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0xe4, offset: 0x8000000000000000)
+64833526000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+64833526000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0xe5, offset: 0x8000000000000000)
+64838114500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+64838114500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0xe6, offset: 0x8000000000000000)
+64842907500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+64842907500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0xe7, offset: 0x8000000000000000)
+64847395000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+64847395000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0xe8, offset: 0x8000000000000000)
+64852211000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+64852211000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0xe9, offset: 0x8000000000000000)
+64857106500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+64857106500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0xea, offset: 0x8000000000000000)
+64862017500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+64862017500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0xeb, offset: 0x8000000000000000)
+64866567500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+64866567500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0xec, offset: 0x8000000000000000)
+64871146000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+64871146000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0xed, offset: 0x8000000000000000)
+64875924500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+64875924500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0xee, offset: 0x8000000000000000)
+64880740500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+64880740500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0xef, offset: 0x8000000000000000)
+64885312000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+64885312000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0xf0, offset: 0x8000000000000000)
+64889978000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+64889978000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0xf1, offset: 0x8000000000000000)
+64894505500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+64894505500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0xf2, offset: 0x8000000000000000)
+64899113500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+64899113500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0xf3, offset: 0x8000000000000000)
+64903892500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+64903892500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0xf4, offset: 0x8000000000000000)
+64908664000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+64908664000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0xf5, offset: 0x8000000000000000)
+64913311000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+64913311000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0xf6, offset: 0x8000000000000000)
+64918019500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+64918019500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0xf7, offset: 0x8000000000000000)
+64923304500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+64923304500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0xf8, offset: 0x8000000000000000)
+64927991500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+64927991500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0xf9, offset: 0x8000000000000000)
+64932590500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+64932590500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0xfa, offset: 0x8000000000000000)
+64937238000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+64937238000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0xfb, offset: 0x8000000000000000)
+64941711500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+64941711500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0xfc, offset: 0x8000000000000000)
+64946304000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+64946304000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0xfd, offset: 0x8000000000000000)
+64951204000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+64951204000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0xfe, offset: 0x8000000000000000)
+64956402000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+64956402000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0xff, offset: 0x8000000000000000)
+64961060500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+64961060500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x100, offset: 0x8000000000000000)
+64965630000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+64965630000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x101, offset: 0x8000000000000000)
+64970249000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+64970249000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x102, offset: 0x8000000000000000)
+64975194500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+64975194500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x103, offset: 0x8000000000000000)
+64979715500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+64979715500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x104, offset: 0x8000000000000000)
+64984232500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+64984232500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x105, offset: 0x8000000000000000)
+64988796500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+64988796500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x106, offset: 0x8000000000000000)
+64993487500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+64993487500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x107, offset: 0x8000000000000000)
+64998579500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+64998579500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x108, offset: 0x8000000000000000)
+65003382500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+65003382500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x109, offset: 0x8000000000000000)
+65008201000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+65008201000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x10a, offset: 0x8000000000000000)
+65012797500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+65012797500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x10b, offset: 0x8000000000000000)
+65017408000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+65017408000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x10c, offset: 0x8000000000000000)
+65022275500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+65022275500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x10d, offset: 0x8000000000000000)
+65027049000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+65027049000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x10e, offset: 0x8000000000000000)
+65031806000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+65031806000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x10f, offset: 0x8000000000000000)
+65036287500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+65036287500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x110, offset: 0x8000000000000000)
+65040872000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+65040872000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x111, offset: 0x8000000000000000)
+65046002500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+65046002500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x112, offset: 0x8000000000000000)
+65050790000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+65050790000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x113, offset: 0x8000000000000000)
+65055324000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+65055324000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x114, offset: 0x8000000000000000)
+65059889000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+65059889000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x115, offset: 0x8000000000000000)
+65064652000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+65064652000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x116, offset: 0x8000000000000000)
+65069487500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+65069487500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x117, offset: 0x8000000000000000)
+65074031000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+65074031000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x118, offset: 0x8000000000000000)
+65081885500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+65081885500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x119, offset: 0x8000000000000000)
+65086545500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+65086545500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x11a, offset: 0x8000000000000000)
+65091178500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+65091178500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x11b, offset: 0x8000000000000000)
+65095407500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+65095407500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x11c, offset: 0x8000000000000000)
+65099179500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+65099179500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x11d, offset: 0x8000000000000000)
+65103031000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+65103031000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x11e, offset: 0x8000000000000000)
+65107290000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+65107290000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x11f, offset: 0x8000000000000000)
+65111036000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+65111036000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x120, offset: 0x8000000000000000)
+65115915000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+65115915000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x121, offset: 0x8000000000000000)
+65120286500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+65120286500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x122, offset: 0x8000000000000000)
+65124917500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+65124917500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x123, offset: 0x8000000000000000)
+65129487000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+65129487000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x124, offset: 0x8000000000000000)
+65134185000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+65134185000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x125, offset: 0x8000000000000000)
+65138763000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+65138763000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x126, offset: 0x8000000000000000)
+65143250500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+65143250500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x127, offset: 0x8000000000000000)
+65147751500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+65147751500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x128, offset: 0x8000000000000000)
+65152391500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+65152391500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x129, offset: 0x8000000000000000)
+65156890500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+65156890500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x12a, offset: 0x8000000000000000)
+65162428000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+65162428000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x12b, offset: 0x8000000000000000)
+65167004500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+65167004500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x12c, offset: 0x8000000000000000)
+65171756500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+65171756500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x12d, offset: 0x8000000000000000)
+65176521000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+65176521000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x12e, offset: 0x8000000000000000)
+65181059500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+65181059500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x12f, offset: 0x8000000000000000)
+65185587500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+65185587500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x130, offset: 0x8000000000000000)
+65190298500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+65190298500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x131, offset: 0x8000000000000000)
+65195071500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+65195071500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x132, offset: 0x8000000000000000)
+65199680500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+65199680500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x133, offset: 0x8000000000000000)
+65204248500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+65204248500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x134, offset: 0x8000000000000000)
+65209077500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+65209077500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x135, offset: 0x8000000000000000)
+65213632000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+65213632000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x136, offset: 0x8000000000000000)
+65218663000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+65218663000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x137, offset: 0x8000000000000000)
+65223213000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+65223213000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x138, offset: 0x8000000000000000)
+65227779500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+65227779500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x139, offset: 0x8000000000000000)
+65232706000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+65232706000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x13a, offset: 0x8000000000000000)
+65237384500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+65237384500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x13b, offset: 0x8000000000000000)
+65241937000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+65241937000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x13c, offset: 0x8000000000000000)
+65246593000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+65246593000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x13d, offset: 0x8000000000000000)
+65251186500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+65251186500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x13e, offset: 0x8000000000000000)
+65256357500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+65256357500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x13f, offset: 0x8000000000000000)
+65261200500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+65261200500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x140, offset: 0x8000000000000000)
+65265851500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+65265851500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x141, offset: 0x8000000000000000)
+65270455000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+65270455000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x142, offset: 0x8000000000000000)
+65275058000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+65275058000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x143, offset: 0x8000000000000000)
+65279621500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+65279621500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x144, offset: 0x8000000000000000)
+65284605000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+65284605000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x145, offset: 0x8000000000000000)
+65289030500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+65289030500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x146, offset: 0x8000000000000000)
+65293621500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+65293621500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x147, offset: 0x8000000000000000)
+65298370000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+65298370000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x148, offset: 0x8000000000000000)
+65303234000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+65303234000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x149, offset: 0x8000000000000000)
+65307806500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+65307806500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x14a, offset: 0x8000000000000000)
+65312699500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+65312699500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x14b, offset: 0x8000000000000000)
+65317471500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+65317471500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x14c, offset: 0x8000000000000000)
+65322170500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+65322170500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x14d, offset: 0x8000000000000000)
+65327466000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+65327466000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x14e, offset: 0x8000000000000000)
+65332131000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+65332131000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x14f, offset: 0x8000000000000000)
+65336549000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+65336549000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x150, offset: 0x8000000000000000)
+65341383000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+65341383000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x151, offset: 0x8000000000000000)
+65345937000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+65345937000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x152, offset: 0x8000000000000000)
+65350795500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+65350795500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x153, offset: 0x8000000000000000)
+65355403000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+65355403000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x154, offset: 0x8000000000000000)
+65359995500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+65359995500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x155, offset: 0x8000000000000000)
+65364935000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+65364935000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x156, offset: 0x8000000000000000)
+65369424000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+65369424000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x157, offset: 0x8000000000000000)
+65373977000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+65373977000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x158, offset: 0x8000000000000000)
+65378655000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+65378655000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x159, offset: 0x8000000000000000)
+65383113500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+65383113500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x15a, offset: 0x8000000000000000)
+65387727000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+65387727000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x15b, offset: 0x8000000000000000)
+65392209500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+65392209500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x15c, offset: 0x8000000000000000)
+65397029500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+65397029500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x15d, offset: 0x8000000000000000)
+65401797000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+65401797000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x15e, offset: 0x8000000000000000)
+65406596000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+65406596000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x15f, offset: 0x8000000000000000)
+65411176000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+65411176000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x160, offset: 0x8000000000000000)
+65415706500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+65415706500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x161, offset: 0x8000000000000000)
+65420531000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+65420531000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x162, offset: 0x8000000000000000)
+65425235000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+65425235000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x163, offset: 0x8000000000000000)
+65429648000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+65429648000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x164, offset: 0x8000000000000000)
+65434253500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+65434253500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x165, offset: 0x8000000000000000)
+65438778000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+65438778000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x166, offset: 0x8000000000000000)
+65443627500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+65443627500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x167, offset: 0x8000000000000000)
+65448142000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+65448142000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x168, offset: 0x8000000000000000)
+65452727000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+65452727000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x169, offset: 0x8000000000000000)
+65457650000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+65457650000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x16a, offset: 0x8000000000000000)
+65462166000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+65462166000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x16b, offset: 0x8000000000000000)
+65466720500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+65466720500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x16c, offset: 0x8000000000000000)
+65471349500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+65471349500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x16d, offset: 0x8000000000000000)
+65475855000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+65475855000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x16e, offset: 0x8000000000000000)
+65480934500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+65480934500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x16f, offset: 0x8000000000000000)
+65485389000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+65485389000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x170, offset: 0x8000000000000000)
+65490236500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+65490236500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x171, offset: 0x8000000000000000)
+65494928500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+65494928500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x172, offset: 0x8000000000000000)
+65499556000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+65499556000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x173, offset: 0x8000000000000000)
+65504383000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+65504383000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x174, offset: 0x8000000000000000)
+65508959500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+65508959500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x175, offset: 0x8000000000000000)
+65513822500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+65513822500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x176, offset: 0x8000000000000000)
+65518618500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+65518618500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x177, offset: 0x8000000000000000)
+65522981500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+65522981500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x178, offset: 0x8000000000000000)
+65527635000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+65527635000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x179, offset: 0x8000000000000000)
+65532326500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+65532326500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x17a, offset: 0x8000000000000000)
+65537154500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+65537154500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x17b, offset: 0x8000000000000000)
+65541668500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+65541668500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x17c, offset: 0x8000000000000000)
+65546349000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+65546349000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x17d, offset: 0x8000000000000000)
+65551144000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+65551144000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x17e, offset: 0x8000000000000000)
+65555633000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+65555633000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x17f, offset: 0x8000000000000000)
+65560652000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+65560652000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x180, offset: 0x8000000000000000)
+65565346000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+65565346000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x181, offset: 0x8000000000000000)
+65569753500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+65569753500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x182, offset: 0x8000000000000000)
+65574388500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+65574388500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x183, offset: 0x8000000000000000)
+65578856000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+65578856000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x184, offset: 0x8000000000000000)
+65583835500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+65583835500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x185, offset: 0x8000000000000000)
+65588426500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+65588426500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x186, offset: 0x8000000000000000)
+65593624000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+65593624000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x187, offset: 0x8000000000000000)
+65598231500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+65598231500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x188, offset: 0x8000000000000000)
+65602769500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+65602769500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x189, offset: 0x8000000000000000)
+65607364500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+65607364500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x18a, offset: 0x8000000000000000)
+65612062500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+65612062500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x18b, offset: 0x8000000000000000)
+65616450000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+65616450000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x18c, offset: 0x8000000000000000)
+65621082500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+65621082500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x18d, offset: 0x8000000000000000)
+65626090500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+65626090500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x18e, offset: 0x8000000000000000)
+65631204500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+65631204500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x18f, offset: 0x8000000000000000)
+65635958500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+65635958500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x190, offset: 0x8000000000000000)
+65640750500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+65640750500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x191, offset: 0x8000000000000000)
+65645593000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+65645593000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x192, offset: 0x8000000000000000)
+65650122500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+65650122500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x193, offset: 0x8000000000000000)
+65654679000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+65654679000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x194, offset: 0x8000000000000000)
+65659531500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+65659531500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x195, offset: 0x8000000000000000)
+65664047500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+65664047500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x196, offset: 0x8000000000000000)
+65668864000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+65668864000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x197, offset: 0x8000000000000000)
+65673584000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+65673584000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x198, offset: 0x8000000000000000)
+65678815500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+65678815500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x199, offset: 0x8000000000000000)
+65683429500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+65683429500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x19a, offset: 0x8000000000000000)
+65688131500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+65688131500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x19b, offset: 0x8000000000000000)
+65692729500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+65692729500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x19c, offset: 0x8000000000000000)
+65697397500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+65697397500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x19d, offset: 0x8000000000000000)
+65702174000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+65702174000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x19e, offset: 0x8000000000000000)
+65706901000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+65706901000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x19f, offset: 0x8000000000000000)
+65711264000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+65711264000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x1a0, offset: 0x8000000000000000)
+65715874000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+65715874000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x1a1, offset: 0x8000000000000000)
+65720541500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+65720541500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x1a2, offset: 0x8000000000000000)
+65725533000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+65725533000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x1a3, offset: 0x8000000000000000)
+65730189500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+65730189500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x1a4, offset: 0x8000000000000000)
+65734826000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+65734826000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x1a5, offset: 0x8000000000000000)
+65739443000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+65739443000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x1a6, offset: 0x8000000000000000)
+65744017500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+65744017500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x1a7, offset: 0x8000000000000000)
+65748553500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+65748553500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x1a8, offset: 0x8000000000000000)
+65753251000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+65753251000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x1a9, offset: 0x8000000000000000)
+65757699500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+65757699500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x1aa, offset: 0x8000000000000000)
+65762354500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+65762354500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x1ab, offset: 0x8000000000000000)
+65767004500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+65767004500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x1ac, offset: 0x8000000000000000)
+65771818500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+65771818500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x1ad, offset: 0x8000000000000000)
+65776498000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+65776498000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x1ae, offset: 0x8000000000000000)
+65781640500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+65781640500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x1af, offset: 0x8000000000000000)
+65786213000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+65786213000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x1b0, offset: 0x8000000000000000)
+65790940500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+65790940500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x1b1, offset: 0x8000000000000000)
+65795627000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+65795627000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x1b2, offset: 0x8000000000000000)
+65800443000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+65800443000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x1b3, offset: 0x8000000000000000)
+65805080500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+65805080500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x1b4, offset: 0x8000000000000000)
+65809686000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+65809686000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x1b5, offset: 0x8000000000000000)
+65814203000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+65814203000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x1b6, offset: 0x8000000000000000)
+65819331500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+65819331500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x1b7, offset: 0x8000000000000000)
+65823846000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+65823846000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x1b8, offset: 0x8000000000000000)
+65828644000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+65828644000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x1b9, offset: 0x8000000000000000)
+65833252000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+65833252000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x1ba, offset: 0x8000000000000000)
+65837901000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+65837901000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x1bb, offset: 0x8000000000000000)
+65842711000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+65842711000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x1bc, offset: 0x8000000000000000)
+65847409000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+65847409000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x1bd, offset: 0x8000000000000000)
+65852015000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+65852015000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x1be, offset: 0x8000000000000000)
+65857140500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+65857140500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x1bf, offset: 0x8000000000000000)
+65861734500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+65861734500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x1c0, offset: 0x8000000000000000)
+65866545500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+65866545500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x1c1, offset: 0x8000000000000000)
+65871228000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+65871228000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x1c2, offset: 0x8000000000000000)
+65875900500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+65875900500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x1c3, offset: 0x8000000000000000)
+65880609500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+65880609500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x1c4, offset: 0x8000000000000000)
+65885221500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+65885221500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x1c5, offset: 0x8000000000000000)
+65889898500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+65889898500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x1c6, offset: 0x8000000000000000)
+65894517500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+65894517500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x1c7, offset: 0x8000000000000000)
+65898919500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+65898919500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x1c8, offset: 0x8000000000000000)
+65903523500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+65903523500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x1c9, offset: 0x8000000000000000)
+65908072000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+65908072000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x1ca, offset: 0x8000000000000000)
+65912894000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+65912894000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x1cb, offset: 0x8000000000000000)
+65917408000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+65917408000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x1cc, offset: 0x8000000000000000)
+65922169500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+65922169500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x1cd, offset: 0x8000000000000000)
+65927310000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+65927310000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x1ce, offset: 0x8000000000000000)
+65932016000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+65932016000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x1cf, offset: 0x8000000000000000)
+65936566500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+65936566500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x1d0, offset: 0x8000000000000000)
+65941334000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+65941334000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x1d1, offset: 0x8000000000000000)
+65945778000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+65945778000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x1d2, offset: 0x8000000000000000)
+65950409500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+65950409500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x1d3, offset: 0x8000000000000000)
+65955137000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+65955137000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x1d4, offset: 0x8000000000000000)
+65960172500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+65960172500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x1d5, offset: 0x8000000000000000)
+65964941500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+65964941500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x1d6, offset: 0x8000000000000000)
+65969543500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+65969543500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x1d7, offset: 0x8000000000000000)
+65974129000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+65974129000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x1d8, offset: 0x8000000000000000)
+65978730500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+65978730500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x1d9, offset: 0x8000000000000000)
+65983321000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+65983321000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x1da, offset: 0x8000000000000000)
+65987967000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+65987967000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x1db, offset: 0x8000000000000000)
+65992341500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+65992341500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x1dc, offset: 0x8000000000000000)
+65996997500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+65996997500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x1dd, offset: 0x8000000000000000)
+66001887000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+66001887000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x1de, offset: 0x8000000000000000)
+66006761000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+66006761000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x1df, offset: 0x8000000000000000)
+66011339500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+66011339500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x1e0, offset: 0x8000000000000000)
+66015982000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+66015982000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x1e1, offset: 0x8000000000000000)
+66020599000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+66020599000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x1e2, offset: 0x8000000000000000)
+66025200000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+66025200000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x1e3, offset: 0x8000000000000000)
+66029889000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+66029889000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x1e4, offset: 0x8000000000000000)
+66034513500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+66034513500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x1e5, offset: 0x8000000000000000)
+66039133500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+66039133500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x1e6, offset: 0x8000000000000000)
+66043711000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+66043711000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x1e7, offset: 0x8000000000000000)
+66048201500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+66048201500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x1e8, offset: 0x8000000000000000)
+66053561000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+66053561000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x1e9, offset: 0x8000000000000000)
+66058129000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+66058129000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x1ea, offset: 0x8000000000000000)
+66062740000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+66062740000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x1eb, offset: 0x8000000000000000)
+66067325500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+66067325500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x1ec, offset: 0x8000000000000000)
+66071919500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+66071919500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x1ed, offset: 0x8000000000000000)
+66076812500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+66076812500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x1ee, offset: 0x8000000000000000)
+66081436000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+66081436000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x1ef, offset: 0x8000000000000000)
+66085870500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+66085870500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x1f0, offset: 0x8000000000000000)
+66090531000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+66090531000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x1f1, offset: 0x8000000000000000)
+66095110500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+66095110500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x1f2, offset: 0x8000000000000000)
+66099971000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+66099971000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x1f3, offset: 0x8000000000000000)
+66104494000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+66104494000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x1f4, offset: 0x8000000000000000)
+66109136500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+66109136500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x1f5, offset: 0x8000000000000000)
+66113876000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+66113876000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x1f6, offset: 0x8000000000000000)
+66119047000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+66119047000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x1f7, offset: 0x8000000000000000)
+66123599000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+66123599000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x1f8, offset: 0x8000000000000000)
+66128512000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+66128512000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x1f9, offset: 0x8000000000000000)
+66132928500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+66132928500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x1fa, offset: 0x8000000000000000)
+66137589000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+66137589000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x1fb, offset: 0x8000000000000000)
+66142322500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+66142322500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x1fc, offset: 0x8000000000000000)
+66147151500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+66147151500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x1fd, offset: 0x8000000000000000)
+66151871000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+66151871000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x1fe, offset: 0x8000000000000000)
+66156672000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+66156672000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x1ff, offset: 0x8000000000000000)
+66161496500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+66161496500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x200, offset: 0x8000000000000000)
+66166049500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+66166049500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x201, offset: 0x8000000000000000)
+66170708500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+66170708500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x202, offset: 0x8000000000000000)
+66175591500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+66175591500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x203, offset: 0x8000000000000000)
+66180119000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+66180119000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x204, offset: 0x8000000000000000)
+66184961500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+66184961500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x205, offset: 0x8000000000000000)
+66189487500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+66189487500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x206, offset: 0x8000000000000000)
+66194402500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+66194402500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x207, offset: 0x8000000000000000)
+66199072000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+66199072000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x208, offset: 0x8000000000000000)
+66203679500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+66203679500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x209, offset: 0x8000000000000000)
+66208670500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+66208670500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x20a, offset: 0x8000000000000000)
+66213205000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+66213205000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x20b, offset: 0x8000000000000000)
+66217993500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+66217993500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x20c, offset: 0x8000000000000000)
+66223092500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+66223092500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x20d, offset: 0x8000000000000000)
+66228190000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+66228190000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x20e, offset: 0x8000000000000000)
+66233048000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+66233048000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x20f, offset: 0x8000000000000000)
+66237907000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+66237907000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x210, offset: 0x8000000000000000)
+66242727000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+66242727000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x211, offset: 0x8000000000000000)
+66247394500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+66247394500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x212, offset: 0x8000000000000000)
+66252132000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+66252132000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x213, offset: 0x8000000000000000)
+66256772500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+66256772500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x214, offset: 0x8000000000000000)
+66261363000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+66261363000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x215, offset: 0x8000000000000000)
+66266108500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+66266108500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x216, offset: 0x8000000000000000)
+66271304000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+66271304000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x217, offset: 0x8000000000000000)
+warn: mmap: writing to shared mmap region is currently unsupported. The write succeeds on the target, but it will not be propagated to the host or shared mappings
+warn: mmap: writing to shared mmap region is currently unsupported. The write succeeds on the target, but it will not be propagated to the host or shared mappings
+warn: ignoring syscall mprotect(...)
+warn: ignoring syscall mprotect(...)
+warn: ignoring syscall mprotect(...)
+75276540000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_QUEUE
+GPU ID: 2765
+args->doorbell_offset1: 0xc2b3400000000
+args->doorbell_offset2: 0xc2b3400000000000
+75276540000: system.cpu2.gpu_cmd_proc.hsapp: setDeviceQueueDesc:base = 0x7ffdeaa6f000, qID = 4, ze = 2097152
+75276540000: global: Trying to map new queue, @ mapQIfSlotAvlbl
+75276540000: global: Trying to find empty HW queue, @ findEmptyHWQ
+75276540000: global: Mapped HSA queue 4 to hw queue 2: @ addQCntxt
+75276540000: system.cpu2.gpu_cmd_proc.hsapp: getCommandsFromHost: read-pointer offset[0x0], write-pointer offset[0x0] doorbell(0)[0x10] 
+75276540000: global: registerNewQueue: offset = 0x10, qID = 4, is_regd = true, AL size 3
+75276540000: system.cpu0.workload.drivers: Creating queue 5
+75313471500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_SET_EVENTS
+75313471500: system.cpu0.workload.drivers: amdkfd set event 1
+75313471500: system.cpu0.workload.drivers: Signal event: Waking up CPU 1
+warn: ignoring syscall mprotect(...)
+75525826000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_WAIT_EVENTS
+75525826000: system.cpu0.workload.drivers: amdkfd wait for events(wait on all: 0, timeout : 4294967294, num_events: 2)
+75525826000: system.cpu0.workload.drivers: 	amdkfd wait for event 0
+75525826000: system.cpu0.workload.drivers: 	amdkfd wait for event 1
+75526597000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_WAIT_EVENTS
+75526597000: system.cpu0.workload.drivers: amdkfd wait for events(wait on all: 0, timeout : 4294967294, num_events: 2)
+75526597000: system.cpu0.workload.drivers: 	amdkfd wait for event 0
+75526597000: system.cpu0.workload.drivers: 	amdkfd wait for event 1
+75526597000: system.cpu0.workload.drivers: CPU 1 is put to sleep
+75964799500: system.cpu2.gpu_cmd_proc.hsapp: write: write of size 4 to reg-offset 0 (0x0)
+75964799500: system.cpu2.gpu_cmd_proc.hsapp: write: write data 0x1 to offset 0 (0x0)
+75964799500: system.cpu2.gpu_cmd_proc.hsapp: getCommandsFromHost: read-pointer offset[0x0], write-pointer offset[0x1] doorbell(0)[0x0] 
+75964799500: system.cpu2.gpu_cmd_proc.hsapp: allocEntry: nReq = 1
+75964799500: system.cpu2.gpu_cmd_proc.hsapp: allocEntry: ix1stFree = 0
+75964799500: system.cpu2.gpu_cmd_proc.hsapp: allocEntry: return = 1, wrIdx = 1
+75964799500: system.cpu2.gpu_cmd_proc.hsapp: getCommandsFromHost: umq_nxt = 0, ttl_aql_buf = 16, dma_start_ix = 0, num_umq = 1
+75964799500: Event_85820617: CmdQueueCmdDmaEvent, ix = 0, npkts = 1,active list ID = 0
+75964799500: system.cpu2.gpu_cmd_proc.hsapp: getCommandsFromHost: aql_buf = 0xabef000, umq_nxt = 0, dma_ix = 0, num2xfer = 1
+75964799500: system.cpu2.gpu_cmd_proc.hsapp: dmaReadVirt:host_addr = 0x7ffef42e6000, size = 64
+75964901500: Event_85820617: >process, ix = 0, npkts = 1, pktsRemaining = 1, active list ID = 0
+75964901500: Event_85820617: process: schedule Qwakeup next cycle, rdIdx 0, wrIdx 1, dispIdx 0, active list ID = 0
+75964901500: system.cpu2.gpu_cmd_proc.hsapp: AQL processing scheduled at tick: 75969301500
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+75969301500: Event_30: process: Qwakeup , rdIdx 0, wrIdx 1, dispIdx 0, active list ID = 0
+75969301500: Event_30: process: Attempting dispatch @ dispIdx[0]
+75969301500: system.cpu2.gpu_cmd_proc.hsapp: processPkt: submitting vendor specific pkt active list ID = 0
+75969301500: system.cpu2.gpu_cmd_proc.hsapp: freeEntry: pkt_ix = 0;  # free entries = 15, wrIdx = 1, rdIdx = 0
+75969301500: Event_85826522: UpdateReadDispIdDmaEvent:
+75969301500: system.cpu2.gpu_cmd_proc.hsapp: updateReadIndex: read-pointer offset [0x1]
+75969301500: system.cpu2.gpu_cmd_proc.hsapp: updateReadIndex: rd-ptr offset [0x1], wr-ptr offset [0x1], space used = 0, q size = 524288, is_empty = true, active list ID = 0
+75969301500: system.cpu2.gpu_cmd_proc.hsapp: finishPkt: rd-ptr offset [0x1], wr-ptr offset [0x1], space used = 0, q size = 524288, stalled = false, empty = true, active list ID = 0
+75969301500: Event_30: process: Increment dispIdx[1]
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: mmap: writing to shared mmap region is currently unsupported. The write succeeds on the target, but it will not be propagated to the host or shared mappings
+warn: mmap: writing to shared mmap region is currently unsupported. The write succeeds on the target, but it will not be propagated to the host or shared mappings
+warn: ignoring syscall mprotect(...)
+warn: ignoring syscall mprotect(...)
+warn: ignoring syscall mprotect(...)
+85157057000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_QUEUE
+GPU ID: 2766
+args->doorbell_offset1: 0xc2b3800000000
+args->doorbell_offset2: 0xc2b3800000000000
+85157057000: system.cpu3.gpu_cmd_proc.hsapp: setDeviceQueueDesc:base = 0x7ffdea5c9000, qID = 5, ze = 2097152
+85157057000: global: Trying to map new queue, @ mapQIfSlotAvlbl
+85157057000: global: Trying to find empty HW queue, @ findEmptyHWQ
+85157057000: global: Mapped HSA queue 5 to hw queue 2: @ addQCntxt
+85157057000: system.cpu3.gpu_cmd_proc.hsapp: getCommandsFromHost: read-pointer offset[0x0], write-pointer offset[0x0] doorbell(0)[0x14] 
+85157057000: global: registerNewQueue: offset = 0x14, qID = 5, is_regd = true, AL size 3
+85157057000: system.cpu0.workload.drivers: Creating queue 6
+85193624500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_SET_EVENTS
+85193624500: system.cpu0.workload.drivers: amdkfd set event 1
+85193624500: system.cpu0.workload.drivers: Signal event: Waking up CPU 1
+warn: ignoring syscall mprotect(...)
+85406536000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_WAIT_EVENTS
+85406536000: system.cpu0.workload.drivers: amdkfd wait for events(wait on all: 0, timeout : 4294967294, num_events: 2)
+85406536000: system.cpu0.workload.drivers: 	amdkfd wait for event 0
+85406536000: system.cpu0.workload.drivers: 	amdkfd wait for event 1
+85407312500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_WAIT_EVENTS
+85407312500: system.cpu0.workload.drivers: amdkfd wait for events(wait on all: 0, timeout : 4294967294, num_events: 2)
+85407312500: system.cpu0.workload.drivers: 	amdkfd wait for event 0
+85407312500: system.cpu0.workload.drivers: 	amdkfd wait for event 1
+85407312500: system.cpu0.workload.drivers: CPU 1 is put to sleep
+85615600500: system.cpu3.gpu_cmd_proc.hsapp: write: write of size 4 to reg-offset 4 (0x4)
+85615600500: system.cpu3.gpu_cmd_proc.hsapp: write: write data 0x1 to offset 4 (0x4)
+85615600500: system.cpu3.gpu_cmd_proc.hsapp: getCommandsFromHost: read-pointer offset[0x0], write-pointer offset[0x1] doorbell(0)[0x4] 
+85615600500: system.cpu3.gpu_cmd_proc.hsapp: allocEntry: nReq = 1
+85615600500: system.cpu3.gpu_cmd_proc.hsapp: allocEntry: ix1stFree = 0
+85615600500: system.cpu3.gpu_cmd_proc.hsapp: allocEntry: return = 1, wrIdx = 1
+85615600500: system.cpu3.gpu_cmd_proc.hsapp: getCommandsFromHost: umq_nxt = 0, ttl_aql_buf = 16, dma_start_ix = 0, num_umq = 1
+85615600500: Event_93134038: CmdQueueCmdDmaEvent, ix = 0, npkts = 1,active list ID = 0
+85615600500: system.cpu3.gpu_cmd_proc.hsapp: getCommandsFromHost: aql_buf = 0xabef800, umq_nxt = 0, dma_ix = 0, num2xfer = 1
+85615600500: system.cpu3.gpu_cmd_proc.hsapp: dmaReadVirt:host_addr = 0x7ffdeb746000, size = 64
+85615702500: Event_93134038: >process, ix = 0, npkts = 1, pktsRemaining = 1, active list ID = 0
+85615702500: Event_93134038: process: schedule Qwakeup next cycle, rdIdx 0, wrIdx 1, dispIdx 0, active list ID = 0
+85615702500: system.cpu3.gpu_cmd_proc.hsapp: AQL processing scheduled at tick: 85620102500
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+85620102500: Event_46: process: Qwakeup , rdIdx 0, wrIdx 1, dispIdx 0, active list ID = 0
+85620102500: Event_46: process: Attempting dispatch @ dispIdx[0]
+85620102500: system.cpu3.gpu_cmd_proc.hsapp: processPkt: submitting vendor specific pkt active list ID = 0
+85620102500: system.cpu3.gpu_cmd_proc.hsapp: freeEntry: pkt_ix = 0;  # free entries = 15, wrIdx = 1, rdIdx = 0
+85620102500: Event_93142699: UpdateReadDispIdDmaEvent:
+85620102500: system.cpu3.gpu_cmd_proc.hsapp: updateReadIndex: read-pointer offset [0x1]
+85620102500: system.cpu3.gpu_cmd_proc.hsapp: updateReadIndex: rd-ptr offset [0x1], wr-ptr offset [0x1], space used = 0, q size = 524288, is_empty = true, active list ID = 0
+85620102500: system.cpu3.gpu_cmd_proc.hsapp: finishPkt: rd-ptr offset [0x1], wr-ptr offset [0x1], space used = 0, q size = 524288, stalled = false, empty = true, active list ID = 0
+85620102500: Event_46: process: Increment dispIdx[1]
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: mmap: writing to shared mmap region is currently unsupported. The write succeeds on the target, but it will not be propagated to the host or shared mappings
+warn: mmap: writing to shared mmap region is currently unsupported. The write succeeds on the target, but it will not be propagated to the host or shared mappings
+warn: ignoring syscall mprotect(...)
+warn: ignoring syscall mprotect(...)
+warn: ignoring syscall mprotect(...)
+111947570500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_QUEUE
+GPU ID: 2765
+args->doorbell_offset1: 0xc2b3400000000
+args->doorbell_offset2: 0xc2b3400000000000
+111947570500: system.cpu2.gpu_cmd_proc.hsapp: setDeviceQueueDesc:base = 0x7ffde9323000, qID = 6, ze = 16777216
+111947570500: global: Trying to map new queue, @ mapQIfSlotAvlbl
+111947570500: global: Trying to find empty HW queue, @ findEmptyHWQ
+111947570500: global: Mapped HSA queue 6 to hw queue 3: @ addQCntxt
+111947570500: system.cpu2.gpu_cmd_proc.hsapp: getCommandsFromHost: read-pointer offset[0x0], write-pointer offset[0x0] doorbell(0)[0x18] 
+111947570500: global: registerNewQueue: offset = 0x18, qID = 6, is_regd = true, AL size 4
+111947570500: system.cpu0.workload.drivers: Creating queue 7
+111984037000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_SET_EVENTS
+111984037000: system.cpu0.workload.drivers: amdkfd set event 1
+111984037000: system.cpu0.workload.drivers: Signal event: Waking up CPU 1
+warn: ignoring syscall mprotect(...)
+warn: mmap: writing to shared mmap region is currently unsupported. The write succeeds on the target, but it will not be propagated to the host or shared mappings
+warn: mmap: writing to shared mmap region is currently unsupported. The write succeeds on the target, but it will not be propagated to the host or shared mappings
+112197947000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_WAIT_EVENTS
+112197947000: system.cpu0.workload.drivers: amdkfd wait for events(wait on all: 0, timeout : 4294967294, num_events: 2)
+112197947000: system.cpu0.workload.drivers: 	amdkfd wait for event 0
+112197947000: system.cpu0.workload.drivers: 	amdkfd wait for event 1
+112198765000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_WAIT_EVENTS
+112198765000: system.cpu0.workload.drivers: amdkfd wait for events(wait on all: 0, timeout : 4294967294, num_events: 2)
+112198765000: system.cpu0.workload.drivers: 	amdkfd wait for event 0
+112198765000: system.cpu0.workload.drivers: 	amdkfd wait for event 1
+112198765000: system.cpu0.workload.drivers: CPU 1 is put to sleep
+warn: ignoring syscall mprotect(...)
+warn: ignoring syscall mprotect(...)
+warn: ignoring syscall mprotect(...)
+136942143500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_QUEUE
+GPU ID: 2766
+args->doorbell_offset1: 0xc2b3800000000
+args->doorbell_offset2: 0xc2b3800000000000
+136942143500: system.cpu3.gpu_cmd_proc.hsapp: setDeviceQueueDesc:base = 0x7ffde807f000, qID = 7, ze = 16777216
+136942143500: global: Trying to map new queue, @ mapQIfSlotAvlbl
+136942143500: global: Trying to find empty HW queue, @ findEmptyHWQ
+136942143500: global: Mapped HSA queue 7 to hw queue 3: @ addQCntxt
+136942143500: system.cpu3.gpu_cmd_proc.hsapp: getCommandsFromHost: read-pointer offset[0x0], write-pointer offset[0x0] doorbell(0)[0x1c] 
+136942143500: global: registerNewQueue: offset = 0x1c, qID = 7, is_regd = true, AL size 4
+136942143500: system.cpu0.workload.drivers: Creating queue 8
+136980041500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_SET_EVENTS
+136980041500: system.cpu0.workload.drivers: amdkfd set event 1
+136980041500: system.cpu0.workload.drivers: Signal event: Waking up CPU 1
+warn: ignoring syscall mprotect(...)
+137202350000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_WAIT_EVENTS
+137202350000: system.cpu0.workload.drivers: amdkfd wait for events(wait on all: 0, timeout : 4294967294, num_events: 2)
+137202350000: system.cpu0.workload.drivers: 	amdkfd wait for event 0
+137202350000: system.cpu0.workload.drivers: 	amdkfd wait for event 1
+137203263500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_WAIT_EVENTS
+137203263500: system.cpu0.workload.drivers: amdkfd wait for events(wait on all: 0, timeout : 4294967294, num_events: 2)
+137203263500: system.cpu0.workload.drivers: 	amdkfd wait for event 0
+137203263500: system.cpu0.workload.drivers: 	amdkfd wait for event 1
+137203263500: system.cpu0.workload.drivers: CPU 1 is put to sleep
+Failed to make code cache entry
+Failed to make code cache entry
+165152093500: system.cpu2.gpu_cmd_proc.hsapp: write: write of size 4 to reg-offset 0 (0x0)
+165152093500: system.cpu2.gpu_cmd_proc.hsapp: write: write data 0x2 to offset 0 (0x0)
+165152093500: system.cpu2.gpu_cmd_proc.hsapp: getCommandsFromHost: read-pointer offset[0x1], write-pointer offset[0x2] doorbell(0)[0x0] 
+165152093500: system.cpu2.gpu_cmd_proc.hsapp: allocEntry: nReq = 1
+165152093500: system.cpu2.gpu_cmd_proc.hsapp: allocEntry: ix1stFree = 1
+165152093500: system.cpu2.gpu_cmd_proc.hsapp: allocEntry: return = 1, wrIdx = 2
+165152093500: system.cpu2.gpu_cmd_proc.hsapp: getCommandsFromHost: umq_nxt = 1, ttl_aql_buf = 16, dma_start_ix = 1, num_umq = 1
+165152093500: Event_167921016: CmdQueueCmdDmaEvent, ix = 1, npkts = 1,active list ID = 0
+165152093500: system.cpu2.gpu_cmd_proc.hsapp: getCommandsFromHost: aql_buf = 0xabef040, umq_nxt = 1, dma_ix = 1, num2xfer = 1
+165152093500: system.cpu2.gpu_cmd_proc.hsapp: dmaReadVirt:host_addr = 0x7ffef42e6040, size = 64
+165152195500: Event_167921016: >process, ix = 1, npkts = 1, pktsRemaining = 1, active list ID = 0
+165152195500: Event_167921016: process: schedule Qwakeup next cycle, rdIdx 1, wrIdx 2, dispIdx 1, active list ID = 0
+165152195500: system.cpu2.gpu_cmd_proc.hsapp: AQL processing scheduled at tick: 165156595500
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+165156595500: Event_30: process: Qwakeup , rdIdx 1, wrIdx 2, dispIdx 1, active list ID = 0
+165156595500: Event_30: process: Attempting dispatch @ dispIdx[1]
+165156595500: system.cpu2.gpu_cmd_proc.hsapp: processPkt: submitting vendor specific pkt active list ID = 0
+165156595500: system.cpu2.gpu_cmd_proc.hsapp: freeEntry: pkt_ix = 1;  # free entries = 15, wrIdx = 2, rdIdx = 1
+165156595500: Event_167929310: UpdateReadDispIdDmaEvent:
+165156595500: system.cpu2.gpu_cmd_proc.hsapp: updateReadIndex: read-pointer offset [0x2]
+165156595500: system.cpu2.gpu_cmd_proc.hsapp: updateReadIndex: rd-ptr offset [0x2], wr-ptr offset [0x2], space used = 0, q size = 524288, is_empty = true, active list ID = 0
+165156595500: system.cpu2.gpu_cmd_proc.hsapp: finishPkt: rd-ptr offset [0x2], wr-ptr offset [0x2], space used = 0, q size = 524288, stalled = false, empty = true, active list ID = 0
+165156595500: Event_30: process: Increment dispIdx[2]
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+165243637000: system.cpu3.gpu_cmd_proc.hsapp: write: write of size 4 to reg-offset 4 (0x4)
+165243637000: system.cpu3.gpu_cmd_proc.hsapp: write: write data 0x2 to offset 4 (0x4)
+165243637000: system.cpu3.gpu_cmd_proc.hsapp: getCommandsFromHost: read-pointer offset[0x1], write-pointer offset[0x2] doorbell(0)[0x4] 
+165243637000: system.cpu3.gpu_cmd_proc.hsapp: allocEntry: nReq = 1
+165243637000: system.cpu3.gpu_cmd_proc.hsapp: allocEntry: ix1stFree = 1
+165243637000: system.cpu3.gpu_cmd_proc.hsapp: allocEntry: return = 1, wrIdx = 2
+165243637000: system.cpu3.gpu_cmd_proc.hsapp: getCommandsFromHost: umq_nxt = 1, ttl_aql_buf = 16, dma_start_ix = 1, num_umq = 1
+165243637000: Event_168039092: CmdQueueCmdDmaEvent, ix = 1, npkts = 1,active list ID = 0
+165243637000: system.cpu3.gpu_cmd_proc.hsapp: getCommandsFromHost: aql_buf = 0xabef840, umq_nxt = 1, dma_ix = 1, num2xfer = 1
+165243637000: system.cpu3.gpu_cmd_proc.hsapp: dmaReadVirt:host_addr = 0x7ffdeb746040, size = 64
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+165243739000: Event_168039092: >process, ix = 1, npkts = 1, pktsRemaining = 1, active list ID = 0
+165243739000: Event_168039092: process: schedule Qwakeup next cycle, rdIdx 1, wrIdx 2, dispIdx 1, active list ID = 0
+165243739000: system.cpu3.gpu_cmd_proc.hsapp: AQL processing scheduled at tick: 165248139000
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+165248139000: Event_46: process: Qwakeup , rdIdx 1, wrIdx 2, dispIdx 1, active list ID = 0
+165248139000: Event_46: process: Attempting dispatch @ dispIdx[1]
+165248139000: system.cpu3.gpu_cmd_proc.hsapp: processPkt: submitting vendor specific pkt active list ID = 0
+165248139000: system.cpu3.gpu_cmd_proc.hsapp: freeEntry: pkt_ix = 1;  # free entries = 15, wrIdx = 2, rdIdx = 1
+165248139000: Event_168048130: UpdateReadDispIdDmaEvent:
+165248139000: system.cpu3.gpu_cmd_proc.hsapp: updateReadIndex: read-pointer offset [0x2]
+165248139000: system.cpu3.gpu_cmd_proc.hsapp: updateReadIndex: rd-ptr offset [0x2], wr-ptr offset [0x2], space used = 0, q size = 524288, is_empty = true, active list ID = 0
+165248139000: system.cpu3.gpu_cmd_proc.hsapp: finishPkt: rd-ptr offset [0x2], wr-ptr offset [0x2], space used = 0, q size = 524288, stalled = false, empty = true, active list ID = 0
+165248139000: Event_46: process: Increment dispIdx[2]
+warn: ignoring syscall sched_yield(...)
+warn: ignoring syscall sched_yield(...)
+165299021000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+165299021000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x218, offset: 0x8000000000000000)
+165303613000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+165303613000: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x219, offset: 0x8000000000000000)
+204438961500: system.cpu2.gpu_cmd_proc.hsapp: write: write of size 4 to reg-offset 24 (0x18)
+204438961500: system.cpu2.gpu_cmd_proc.hsapp: write: write data 0x1 to offset 24 (0x18)
+204438961500: system.cpu2.gpu_cmd_proc.hsapp: getCommandsFromHost: read-pointer offset[0x0], write-pointer offset[0x1] doorbell(0)[0x18] 
+204438961500: system.cpu2.gpu_cmd_proc.hsapp: allocEntry: nReq = 1
+204438961500: system.cpu2.gpu_cmd_proc.hsapp: allocEntry: ix1stFree = 0
+204438961500: system.cpu2.gpu_cmd_proc.hsapp: allocEntry: return = 1, wrIdx = 1
+204438961500: system.cpu2.gpu_cmd_proc.hsapp: getCommandsFromHost: umq_nxt = 0, ttl_aql_buf = 16, dma_start_ix = 0, num_umq = 1
+204438961500: Event_196806348: CmdQueueCmdDmaEvent, ix = 0, npkts = 1,active list ID = 3
+204438961500: system.cpu2.gpu_cmd_proc.hsapp: getCommandsFromHost: aql_buf = 0xabee400, umq_nxt = 0, dma_ix = 0, num2xfer = 1
+204438961500: system.cpu2.gpu_cmd_proc.hsapp: dmaReadVirt:host_addr = 0x7ffde9323000, size = 64
+204439063500: Event_196806348: >process, ix = 0, npkts = 1, pktsRemaining = 1, active list ID = 3
+204439063500: Event_196806348: process: schedule Qwakeup next cycle, rdIdx 0, wrIdx 1, dispIdx 0, active list ID = 3
+204439063500: system.cpu2.gpu_cmd_proc.hsapp: AQL processing scheduled at tick: 204443463500
+204439808500: system.cpu3.gpu_cmd_proc.hsapp: write: write of size 4 to reg-offset 28 (0x1c)
+204439808500: system.cpu3.gpu_cmd_proc.hsapp: write: write data 0x1 to offset 28 (0x1c)
+204439808500: system.cpu3.gpu_cmd_proc.hsapp: getCommandsFromHost: read-pointer offset[0x0], write-pointer offset[0x1] doorbell(0)[0x1c] 
+204439808500: system.cpu3.gpu_cmd_proc.hsapp: allocEntry: nReq = 1
+204439808500: system.cpu3.gpu_cmd_proc.hsapp: allocEntry: ix1stFree = 0
+204439808500: system.cpu3.gpu_cmd_proc.hsapp: allocEntry: return = 1, wrIdx = 1
+204439808500: system.cpu3.gpu_cmd_proc.hsapp: getCommandsFromHost: umq_nxt = 0, ttl_aql_buf = 16, dma_start_ix = 0, num_umq = 1
+204439808500: Event_196807017: CmdQueueCmdDmaEvent, ix = 0, npkts = 1,active list ID = 3
+204439808500: system.cpu3.gpu_cmd_proc.hsapp: getCommandsFromHost: aql_buf = 0xabee000, umq_nxt = 0, dma_ix = 0, num2xfer = 1
+204439808500: system.cpu3.gpu_cmd_proc.hsapp: dmaReadVirt:host_addr = 0x7ffde807f000, size = 64
+204439910500: Event_196807017: >process, ix = 0, npkts = 1, pktsRemaining = 1, active list ID = 3
+204439910500: Event_196807017: process: schedule Qwakeup next cycle, rdIdx 0, wrIdx 1, dispIdx 0, active list ID = 3
+204439910500: system.cpu3.gpu_cmd_proc.hsapp: AQL processing scheduled at tick: 204444310500
+204443463500: Event_33: process: Qwakeup , rdIdx 0, wrIdx 1, dispIdx 0, active list ID = 3
+204443463500: Event_33: process: Attempting dispatch @ dispIdx[0]
+204443463500: system.cpu2.gpu_cmd_proc.hsapp: processPkt: submitting kernel dispatch pkt active list ID = 3
+204443463500: Event_33: process: Increment dispIdx[1]
+204444310500: Event_49: process: Qwakeup , rdIdx 0, wrIdx 1, dispIdx 0, active list ID = 3
+204444310500: Event_49: process: Attempting dispatch @ dispIdx[0]
+204444310500: system.cpu3.gpu_cmd_proc.hsapp: processPkt: submitting kernel dispatch pkt active list ID = 3
+204444310500: Event_49: process: Increment dispIdx[1]
+204675055500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_WAIT_EVENTS
+204675055500: system.cpu0.workload.drivers: amdkfd wait for events(wait on all: 1, timeout : 4294967294, num_events: 1)
+204675055500: system.cpu0.workload.drivers: 	amdkfd creating event list for thread  0
+204675055500: system.cpu0.workload.drivers: 	amdkfd wait for event 536
+204675055500: system.cpu0.workload.drivers: CPU 0 is put to sleep
+205540335000: system.cpu2.gpu_cmd_proc.hsapp: freeEntry: pkt_ix = 0;  # free entries = 15, wrIdx = 1, rdIdx = 0
+205540335000: Event_224376958: UpdateReadDispIdDmaEvent:
+205540335000: system.cpu2.gpu_cmd_proc.hsapp: updateReadIndex: read-pointer offset [0x1]
+205540335000: system.cpu2.gpu_cmd_proc.hsapp: updateReadIndex: rd-ptr offset [0x1], wr-ptr offset [0x1], space used = 0, q size = 16777216, is_empty = true, active list ID = 3
+205540335000: system.cpu2.gpu_cmd_proc.hsapp: finishPkt: rd-ptr offset [0x1], wr-ptr offset [0x1], space used = 0, q size = 16777216, stalled = false, empty = true, active list ID = 3
+205540335000: system.cpu0.workload.drivers: Signal event: Waking up CPU 0
+205558869000: system.cpu3.gpu_cmd_proc.hsapp: freeEntry: pkt_ix = 0;  # free entries = 15, wrIdx = 1, rdIdx = 0
+205558869000: Event_224590320: UpdateReadDispIdDmaEvent:
+205558869000: system.cpu3.gpu_cmd_proc.hsapp: updateReadIndex: read-pointer offset [0x1]
+205558869000: system.cpu3.gpu_cmd_proc.hsapp: updateReadIndex: rd-ptr offset [0x1], wr-ptr offset [0x1], space used = 0, q size = 16777216, is_empty = true, active list ID = 3
+205558869000: system.cpu3.gpu_cmd_proc.hsapp: finishPkt: rd-ptr offset [0x1], wr-ptr offset [0x1], space used = 0, q size = 16777216, stalled = false, empty = true, active list ID = 3
+Passed validation.
+250330290500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_DESTROY_EVENT
+250330290500: system.cpu0.workload.drivers: amdkfd destroying event 536
+250339683000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_DESTROY_EVENT
+250339683000: system.cpu0.workload.drivers: amdkfd destroying event 537
+250389972500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_DESTROY_QUEUE;queue offset 6
+250389972500: global: db_offset = 18
+250389972500: global: db_offset = 6
+250389972500: global: context switching
+250389972500: global: Trying to map next queue, @ contextSwitchQ250400135000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_SET_EVENTS
+250400135000: system.cpu0.workload.drivers: amdkfd set event 0
+250400135000: system.cpu0.workload.drivers: Signal event: Waking up CPU 1
+250428223000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_DESTROY_QUEUE;queue offset 7
+250428223000: global: db_offset = 1c
+250428223000: global: db_offset = 7
+250428223000: global: context switching
+250428223000: global: Trying to map next queue, @ contextSwitchQ250431916500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_SET_EVENTS
+250431916500: system.cpu0.workload.drivers: amdkfd set event 0
+250636776500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_WAIT_EVENTS
+250636776500: system.cpu0.workload.drivers: amdkfd wait for events(wait on all: 0, timeout : 4294967294, num_events: 2)
+250636776500: system.cpu0.workload.drivers: 	amdkfd wait for event 0
+250636776500: system.cpu0.workload.drivers: 	amdkfd wait for event 1
+250637517000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_WAIT_EVENTS
+250637517000: system.cpu0.workload.drivers: amdkfd wait for events(wait on all: 0, timeout : 4294967294, num_events: 2)
+250637517000: system.cpu0.workload.drivers: 	amdkfd wait for event 0
+250637517000: system.cpu0.workload.drivers: 	amdkfd wait for event 1
+250637517000: system.cpu0.workload.drivers: CPU 1 is put to sleep
+4294967544637517000: Event_45304884: Timer event: Waking up CPU 1
+4294967544638248500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_WAIT_EVENTS
+4294967544638248500: system.cpu0.workload.drivers: amdkfd wait for events(wait on all: 0, timeout : 4294967294, num_events: 2)
+4294967544638248500: system.cpu0.workload.drivers: 	amdkfd wait for event 0
+4294967544638248500: system.cpu0.workload.drivers: 	amdkfd wait for event 1
+4294967544638248500: system.cpu0.workload.drivers: CPU 1 is put to sleep
+8589934838638248500: Event_45304884: Timer event: Waking up CPU 1
+8589934838638980000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_WAIT_EVENTS
+8589934838638980000: system.cpu0.workload.drivers: amdkfd wait for events(wait on all: 0, timeout : 4294967294, num_events: 2)
+8589934838638980000: system.cpu0.workload.drivers: 	amdkfd wait for event 0
+8589934838638980000: system.cpu0.workload.drivers: 	amdkfd wait for event 1
+8589934838638980000: system.cpu0.workload.drivers: CPU 1 is put to sleep
+12884902132638980000: Event_45304884: Timer event: Waking up CPU 1
+12884902132639711500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_WAIT_EVENTS
+12884902132639711500: system.cpu0.workload.drivers: amdkfd wait for events(wait on all: 0, timeout : 4294967294, num_events: 2)
+12884902132639711500: system.cpu0.workload.drivers: 	amdkfd wait for event 0
+12884902132639711500: system.cpu0.workload.drivers: 	amdkfd wait for event 1
+12884902132639711500: system.cpu0.workload.drivers: CPU 1 is put to sleep
+17179869426639711500: Event_45304884: Timer event: Waking up CPU 1
+17179869426640443000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_WAIT_EVENTS
+17179869426640443000: system.cpu0.workload.drivers: amdkfd wait for events(wait on all: 0, timeout : 4294967294, num_events: 2)
+17179869426640443000: system.cpu0.workload.drivers: 	amdkfd wait for event 0
+17179869426640443000: system.cpu0.workload.drivers: 	amdkfd wait for event 1
+gem5.opt: build/GCN3_X86/sim/eventq_impl.hh:44: void EventQueue::schedule(Event*, Tick, bool): Assertion `when >= getCurTick()' failed.
+Program aborted at tick 17179869426640443000
+--- BEGIN LIBC BACKTRACE ---
+build/GCN3_X86/gem5.opt(_Z15print_backtracev+0x28)[0xb0d3f8]
+build/GCN3_X86/gem5.opt(_Z12abortHandleri+0x46)[0xb1ff76]
+/lib/x86_64-linux-gnu/libpthread.so.0(+0x11390)[0x7f9de4739390]
+/lib/x86_64-linux-gnu/libc.so.6(gsignal+0x38)[0x7f9de2f1c428]
+/lib/x86_64-linux-gnu/libc.so.6(abort+0x16a)[0x7f9de2f1e02a]
+/lib/x86_64-linux-gnu/libc.so.6(+0x2dbd7)[0x7f9de2f14bd7]
+/lib/x86_64-linux-gnu/libc.so.6(+0x2dc82)[0x7f9de2f14c82]
+build/GCN3_X86/gem5.opt[0x18f2d9a]
+build/GCN3_X86/gem5.opt(_ZN16GPUComputeDriver8sleepCPUEP13ThreadContextj+0xaa)[0x9edd1a]
+build/GCN3_X86/gem5.opt(_ZN16GPUComputeDriver5ioctlEP13ThreadContextj+0x1e42)[0x9efc62]
+build/GCN3_X86/gem5.opt(_Z9ioctlFuncI10X86Linux64E13SyscallReturnP11SyscallDesciP13ThreadContext+0x10a)[0x175c18a]
+build/GCN3_X86/gem5.opt(_ZN11SyscallDesc9doSyscallEiP13ThreadContextPSt10shared_ptrI9FaultBaseE+0x15d)[0xb5ef9d]
+build/GCN3_X86/gem5.opt(_ZN7Process7syscallElP13ThreadContextPSt10shared_ptrI9FaultBaseE+0x53)[0xb4bb83]
+build/GCN3_X86/gem5.opt(_ZN17SimpleExecContext7syscallElPSt10shared_ptrI9FaultBaseE+0x3b)[0x1b2b25b]
+build/GCN3_X86/gem5.opt(_ZNK10X86ISAInst7Syscall7executeEP11ExecContextPN5Trace10InstRecordE+0x38)[0x16f7aa8]
+build/GCN3_X86/gem5.opt(_ZN15TimingSimpleCPU14completeIfetchEP6Packet+0x172)[0x1b1ef92]
+build/GCN3_X86/gem5.opt(_ZN10EventQueue10serviceOneEv+0x11d)[0xb13c3d]
+build/GCN3_X86/gem5.opt(_Z9doSimLoopP10EventQueue+0x50)[0xb2c630]
+build/GCN3_X86/gem5.opt(_Z8simulatem+0xd1b)[0xb2d71b]
+build/GCN3_X86/gem5.opt[0x12f267a]
+build/GCN3_X86/gem5.opt[0xb74ef5]
+/usr/lib/x86_64-linux-gnu/libpython2.7.so.1.0(PyEval_EvalFrameEx+0x7852)[0x7f9de49f67b2]
+/usr/lib/x86_64-linux-gnu/libpython2.7.so.1.0(PyEval_EvalCodeEx+0x85c)[0x7f9de4b2d11c]
+/usr/lib/x86_64-linux-gnu/libpython2.7.so.1.0(PyEval_EvalFrameEx+0x6ffd)[0x7f9de49f5f5d]
+/usr/lib/x86_64-linux-gnu/libpython2.7.so.1.0(PyEval_EvalCodeEx+0x85c)[0x7f9de4b2d11c]
+/usr/lib/x86_64-linux-gnu/libpython2.7.so.1.0(PyEval_EvalCode+0x19)[0x7f9de49eede9]
+/usr/lib/x86_64-linux-gnu/libpython2.7.so.1.0(PyEval_EvalFrameEx+0x613b)[0x7f9de49f509b]
+/usr/lib/x86_64-linux-gnu/libpython2.7.so.1.0(PyEval_EvalCodeEx+0x85c)[0x7f9de4b2d11c]
+/usr/lib/x86_64-linux-gnu/libpython2.7.so.1.0(PyEval_EvalFrameEx+0x6ffd)[0x7f9de49f5f5d]
+/usr/lib/x86_64-linux-gnu/libpython2.7.so.1.0(PyEval_EvalCodeEx+0x85c)[0x7f9de4b2d11c]
+/usr/lib/x86_64-linux-gnu/libpython2.7.so.1.0(PyEval_EvalCode+0x19)[0x7f9de49eede9]
+/usr/lib/x86_64-linux-gnu/libpython2.7.so.1.0(PyRun_StringFlags+0x76)[0x7f9de4a69236]
+--- END LIBC BACKTRACE ---

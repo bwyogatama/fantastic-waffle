@@ -1,0 +1,242 @@
+warn: system.ruby.network adopting orphan SimObject param 'int_links'
+warn: system.ruby.network adopting orphan SimObject param 'ext_links'
+gem5 Simulator System.  http://gem5.org
+gem5 is copyrighted software; use the --copyright option for details.
+
+gem5 compiled Apr 23 2020 16:47:49
+gem5 started Apr 23 2020 19:32:03
+gem5 executing on impa, pid 4545
+command line: build/GCN3_X86/gem5.opt --debug-flags=HSAPacketProcessor,HSADriver,GPUDriver configs/example/apu_se_mod.py -n2 --num-gpus=2 --benchmark-root=/u/b/w/bwyogatama/Research/Scheduling/gem5_clean/gem5/HSA -c vector_copy4.out --options=/u/b/w/bwyogatama/Research/Scheduling/gem5_clean/gem5/HSA/vector_copy.brig
+
+Num SQC =  1 Num scalar caches =  1 Num CU =  4
+Num GPUs =  2
+TCC_bits = 0
+Num Dirs = 1
+<orphan System>.ruby.cp_cntrl0
+<orphan System>.ruby.tcp_cntrl0
+<orphan System>.ruby.tcp_cntrl1
+<orphan System>.ruby.tcp_cntrl2
+<orphan System>.ruby.tcp_cntrl3
+<orphan System>.ruby.sqc_cntrl0
+<orphan System>.ruby.scalar_cntrl0
+<orphan System>.ruby.tcc_cntrl0
+<orphan System>.dma_cntrl0
+<orphan System>.dma_cntrl1
+<orphan System>.ruby.tcp_cntrl4
+<orphan System>.ruby.tcp_cntrl5
+<orphan System>.ruby.tcp_cntrl6
+<orphan System>.ruby.tcp_cntrl7
+<orphan System>.ruby.sqc_cntrl1
+<orphan System>.ruby.scalar_cntrl1
+<orphan System>.ruby.tcc_cntrl1
+<orphan System>.dma_cntrl2
+<orphan System>.dma_cntrl3
+Global frequency set at 1000000000000 ticks per second
+warn: DRAM device capacity (8192 Mbytes) does not match the address range assigned (512 Mbytes)
+      0: system.cpu2.gpu_cmd_proc.hsapp: HSAPacketProcessor:
+      0: system.cpu3.gpu_cmd_proc.hsapp: HSAPacketProcessor:
+      0: system.cpu0.workload.drivers: Constructing KFD: device
+Forcing maxCoalescedReqs to 32 (TLB assoc.) 
+Forcing maxCoalescedReqs to 32 (TLB assoc.) 
+Forcing maxCoalescedReqs to 32 (TLB assoc.) 
+Forcing maxCoalescedReqs to 32 (TLB assoc.) 
+Forcing maxCoalescedReqs to 32 (TLB assoc.) 
+Forcing maxCoalescedReqs to 32 (TLB assoc.) 
+Forcing maxCoalescedReqs to 32 (TLB assoc.) 
+Forcing maxCoalescedReqs to 32 (TLB assoc.) 
+Forcing maxCoalescedReqs to 32 (TLB assoc.) 
+Forcing maxCoalescedReqs to 32 (TLB assoc.) 
+Forcing maxCoalescedReqs to 32 (TLB assoc.) 
+Forcing maxCoalescedReqs to 32 (TLB assoc.) 
+Forcing maxCoalescedReqs to 32 (TLB assoc.) 
+Forcing maxCoalescedReqs to 32 (TLB assoc.) 
+Forcing maxCoalescedReqs to 32 (TLB assoc.) 
+Forcing maxCoalescedReqs to 32 (TLB assoc.) 
+0: system.remote_gdb: listening for remote gdb on port 7000
+0: system.remote_gdb: listening for remote gdb on port 7001
+info: Entering event queue @ 0.  Starting simulation...
+warn: Replacement policy updates recently became the responsibility of SLICC state machines. Make sure to setMRU() near callbacks in .sm files!
+warn: x86 cpuid family 0x0000: unimplemented function 7
+warn: ignoring syscall access(...)
+warn: ignoring syscall access(...)
+warn: ignoring syscall mprotect(...)
+warn: ignoring syscall access(...)
+warn: ignoring syscall mprotect(...)
+warn: ignoring syscall access(...)
+warn: ignoring syscall mprotect(...)
+warn: ignoring syscall access(...)
+warn: ignoring syscall mprotect(...)
+warn: ignoring syscall mprotect(...)
+warn: ignoring syscall mprotect(...)
+warn: ignoring syscall mprotect(...)
+warn: ignoring syscall mprotect(...)
+warn: ignoring syscall mprotect(...)
+warn: ignoring syscall access(...)
+warn: ignoring syscall mprotect(...)
+warn: ignoring syscall access(...)
+warn: ignoring syscall mprotect(...)
+warn: ignoring syscall access(...)
+warn: ignoring syscall mprotect(...)
+warn: ignoring syscall mprotect(...)
+warn: ignoring syscall access(...)
+warn: ignoring syscall mprotect(...)
+warn: ignoring syscall access(...)
+warn: ignoring syscall mprotect(...)
+warn: ignoring syscall access(...)
+warn: ignoring syscall mprotect(...)
+warn: ignoring syscall access(...)
+warn: ignoring syscall mprotect(...)
+warn: ignoring syscall access(...)
+warn: ignoring syscall mprotect(...)
+warn: ignoring syscall mprotect(...)
+warn: ignoring syscall mprotect(...)
+warn: ignoring syscall mprotect(...)
+warn: ignoring syscall mprotect(...)
+warn: ignoring syscall mprotect(...)
+warn: ignoring syscall mprotect(...)
+warn: ignoring syscall mprotect(...)
+warn: ignoring syscall mprotect(...)
+warn: ignoring syscall mprotect(...)
+warn: ignoring syscall mprotect(...)
+warn: ignoring syscall mprotect(...)
+warn: ignoring syscall mprotect(...)
+warn: ignoring syscall mprotect(...)
+warn: ignoring syscall mprotect(...)
+warn: ignoring syscall mprotect(...)
+warn: ignoring syscall mprotect(...)
+warn: ignoring syscall mprotect(...)
+warn: ignoring syscall mprotect(...)
+warn: ignoring syscall set_robust_list(...)
+warn: ignoring syscall rt_sigaction(...)
+      (further warnings will be suppressed)
+warn: ignoring syscall rt_sigprocmask(...)
+      (further warnings will be suppressed)
+warn: ignoring syscall mprotect(...)
+warn: ignoring syscall mprotect(...)
+17301654500: system.cpu0.workload.drivers: Opened kfd
+warn: ignoring syscall access(...)
+17577233000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_GET_PROCESS_APERTURES_NEW
+ioc_args->num_of_nodes: 2
+warn: fcntl: unsupported command 6
+warn: fcntl: unsupported command 6
+17596391000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_GET_VERSION
+Failed to get Processor Vendor. Setting to GenuineIntel
+warn: ignoring syscall sched_getaffinity(...)
+warn: ignoring syscall sched_setaffinity(...)
+warn: x86 cpuid family 0x0000: unimplemented function 4 returning 0x0, 0x0, 0x0, 0x0.
+warn: ignoring syscall sched_setaffinity(...)
+warn: x86 cpuid family 0x0000: unimplemented function 4 returning 0x0, 0x0, 0x0, 0x0.
+warn: ignoring syscall sched_setaffinity(...)
+warn: ignoring syscall access(...)
+17821184000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_GET_CLOCK_COUNTERS
+17825768500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_GET_CLOCK_COUNTERS
+17870456000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_GET_CLOCK_COUNTERS
+warn: ignoring syscall mprotect(...)
+warn: ignoring syscall mprotect(...)
+warn: ignoring syscall mprotect(...)
+warn: ignoring syscall mprotect(...)
+warn: unimplemented ioctl: AMDKFD_IOC_ALLOC_MEMORY_OF_SCRATCH
+warn: mmap: writing to shared mmap region is currently unsupported. The write succeeds on the target, but it will not be propagated to the host or shared mappings
+warn: mmap: writing to shared mmap region is currently unsupported. The write succeeds on the target, but it will not be propagated to the host or shared mappings
+warn: ignoring syscall mprotect(...)
+warn: ignoring syscall mprotect(...)
+warn: ignoring syscall mprotect(...)
+34714656000: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_QUEUE
+GPU ID: 2765
+args->doorbell_offset1: 0xc2b3400000000
+args->doorbell_offset2: 0xc2b3400000000000
+34714656000: system.cpu2.gpu_cmd_proc.hsapp: setDeviceQueueDesc:base = 0x7ffef42dc000, qID = 0, ze = 524288
+34714656000: global: Trying to map new queue, @ mapQIfSlotAvlbl
+34714656000: global: Trying to find empty HW queue, @ findEmptyHWQ
+34714656000: global: Mapped HSA queue 0 to hw queue 0: @ addQCntxt
+34714656000: system.cpu2.gpu_cmd_proc.hsapp: getCommandsFromHost: read-pointer offset[0x0], write-pointer offset[0x0] doorbell(0)[0x0] 
+34714656000: global: registerNewQueue: offset = 0, qID = 0, is_regd = true, AL size 1
+34714656000: system.cpu0.workload.drivers: Creating queue 1
+warn: mmap: writing to shared mmap region is currently unsupported. The write succeeds on the target, but it will not be propagated to the host or shared mappings
+34719942500: system.cpu0.workload.drivers: amdkfd doorbell mmap (start: 0, length: 0x1000,offset: 0x0)
+mem_state->getMmapEnd() = 140732992290816
+start = 140732992286720
+vm_pgoff: 0xc2b3400000000
+offset: 0x0
+GPU ID: 0xacd
+34719942500: system.cpu0.workload.drivers: amdkfd doorbell mapped to 7ffef4037000p
+34750874500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+34750874500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x0, offset: 0x8000000000000000)
+warn: mmap: writing to shared mmap region is currently unsupported. The write succeeds on the target, but it will not be propagated to the host or shared mappings
+34751266000: system.cpu0.workload.drivers: amdkfd mmap for events(start: 0, length: 0x9000,offset: 0x8000000000000000,  )
+eventPage = (nil)
+should_mmap = 1
+mem_state->getMmapEnd() = 140732992286720
+start = 140732992249856
+eventPage = 0x7ffef402e000
+34780058500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_CREATE_EVENT
+34780058500: system.cpu0.workload.drivers: amdkfd create events(event_id: 0x1, offset: 0x8000000000000000)
+warn: ignoring syscall mprotect(...)
+warn: ClockedObject: Already in the requested power state, request ignored
+warn: ignoring syscall set_robust_list(...)
+warn: ignoring syscall mprotect(...)
+35068741500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_WAIT_EVENTS
+35068741500: system.cpu0.workload.drivers: amdkfd wait for events(wait on all: 0, timeout : 4294967294, num_events: 2)
+35068741500: system.cpu0.workload.drivers: 	amdkfd creating event list for thread  1
+35068741500: system.cpu0.workload.drivers: 	amdkfd wait for event 0
+35068741500: system.cpu0.workload.drivers: 	amdkfd wait for event 1
+35068741500: system.cpu0.workload.drivers: CPU 1 is put to sleep
+4294967329068741500: Event_45178130: Timer event: Waking up CPU 1
+4294967329070224500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_WAIT_EVENTS
+4294967329070224500: system.cpu0.workload.drivers: amdkfd wait for events(wait on all: 0, timeout : 4294967294, num_events: 2)
+4294967329070224500: system.cpu0.workload.drivers: 	amdkfd wait for event 0
+4294967329070224500: system.cpu0.workload.drivers: 	amdkfd wait for event 1
+4294967329070224500: system.cpu0.workload.drivers: CPU 1 is put to sleep
+8589934623070224500: Event_45178130: Timer event: Waking up CPU 1
+8589934623070694500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_WAIT_EVENTS
+8589934623070694500: system.cpu0.workload.drivers: amdkfd wait for events(wait on all: 0, timeout : 4294967294, num_events: 2)
+8589934623070694500: system.cpu0.workload.drivers: 	amdkfd wait for event 0
+8589934623070694500: system.cpu0.workload.drivers: 	amdkfd wait for event 1
+8589934623070694500: system.cpu0.workload.drivers: CPU 1 is put to sleep
+12884901917070694500: Event_45178130: Timer event: Waking up CPU 1
+12884901917071164500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_WAIT_EVENTS
+12884901917071164500: system.cpu0.workload.drivers: amdkfd wait for events(wait on all: 0, timeout : 4294967294, num_events: 2)
+12884901917071164500: system.cpu0.workload.drivers: 	amdkfd wait for event 0
+12884901917071164500: system.cpu0.workload.drivers: 	amdkfd wait for event 1
+12884901917071164500: system.cpu0.workload.drivers: CPU 1 is put to sleep
+17179869211071164500: Event_45178130: Timer event: Waking up CPU 1
+17179869211071634500: system.cpu0.workload.drivers: ioctl: AMDKFD_IOC_WAIT_EVENTS
+17179869211071634500: system.cpu0.workload.drivers: amdkfd wait for events(wait on all: 0, timeout : 4294967294, num_events: 2)
+17179869211071634500: system.cpu0.workload.drivers: 	amdkfd wait for event 0
+17179869211071634500: system.cpu0.workload.drivers: 	amdkfd wait for event 1
+gem5.opt: build/GCN3_X86/sim/eventq_impl.hh:44: void EventQueue::schedule(Event*, Tick, bool): Assertion `when >= getCurTick()' failed.
+Program aborted at tick 17179869211071634500
+--- BEGIN LIBC BACKTRACE ---
+build/GCN3_X86/gem5.opt(_Z15print_backtracev+0x28)[0xb0d3f8]
+build/GCN3_X86/gem5.opt(_Z12abortHandleri+0x46)[0xb1ff76]
+/lib/x86_64-linux-gnu/libpthread.so.0(+0x11390)[0x7fb6ff32c390]
+/lib/x86_64-linux-gnu/libc.so.6(gsignal+0x38)[0x7fb6fdb0f428]
+/lib/x86_64-linux-gnu/libc.so.6(abort+0x16a)[0x7fb6fdb1102a]
+/lib/x86_64-linux-gnu/libc.so.6(+0x2dbd7)[0x7fb6fdb07bd7]
+/lib/x86_64-linux-gnu/libc.so.6(+0x2dc82)[0x7fb6fdb07c82]
+build/GCN3_X86/gem5.opt[0x18f2d9a]
+build/GCN3_X86/gem5.opt(_ZN16GPUComputeDriver8sleepCPUEP13ThreadContextj+0xaa)[0x9edd1a]
+build/GCN3_X86/gem5.opt(_ZN16GPUComputeDriver5ioctlEP13ThreadContextj+0x1e42)[0x9efc62]
+build/GCN3_X86/gem5.opt(_Z9ioctlFuncI10X86Linux64E13SyscallReturnP11SyscallDesciP13ThreadContext+0x10a)[0x175c18a]
+build/GCN3_X86/gem5.opt(_ZN11SyscallDesc9doSyscallEiP13ThreadContextPSt10shared_ptrI9FaultBaseE+0x15d)[0xb5ef9d]
+build/GCN3_X86/gem5.opt(_ZN7Process7syscallElP13ThreadContextPSt10shared_ptrI9FaultBaseE+0x53)[0xb4bb83]
+build/GCN3_X86/gem5.opt(_ZN17SimpleExecContext7syscallElPSt10shared_ptrI9FaultBaseE+0x3b)[0x1b2b25b]
+build/GCN3_X86/gem5.opt(_ZNK10X86ISAInst7Syscall7executeEP11ExecContextPN5Trace10InstRecordE+0x38)[0x16f7aa8]
+build/GCN3_X86/gem5.opt(_ZN15TimingSimpleCPU14completeIfetchEP6Packet+0x172)[0x1b1ef92]
+build/GCN3_X86/gem5.opt(_ZN10EventQueue10serviceOneEv+0x11d)[0xb13c3d]
+build/GCN3_X86/gem5.opt(_Z9doSimLoopP10EventQueue+0x50)[0xb2c630]
+build/GCN3_X86/gem5.opt(_Z8simulatem+0xd1b)[0xb2d71b]
+build/GCN3_X86/gem5.opt[0x12f267a]
+build/GCN3_X86/gem5.opt[0xb74ef5]
+/usr/lib/x86_64-linux-gnu/libpython2.7.so.1.0(PyEval_EvalFrameEx+0x7852)[0x7fb6ff5e97b2]
+/usr/lib/x86_64-linux-gnu/libpython2.7.so.1.0(PyEval_EvalCodeEx+0x85c)[0x7fb6ff72011c]
+/usr/lib/x86_64-linux-gnu/libpython2.7.so.1.0(PyEval_EvalFrameEx+0x6ffd)[0x7fb6ff5e8f5d]
+/usr/lib/x86_64-linux-gnu/libpython2.7.so.1.0(PyEval_EvalCodeEx+0x85c)[0x7fb6ff72011c]
+/usr/lib/x86_64-linux-gnu/libpython2.7.so.1.0(PyEval_EvalCode+0x19)[0x7fb6ff5e1de9]
+/usr/lib/x86_64-linux-gnu/libpython2.7.so.1.0(PyEval_EvalFrameEx+0x613b)[0x7fb6ff5e809b]
+/usr/lib/x86_64-linux-gnu/libpython2.7.so.1.0(PyEval_EvalCodeEx+0x85c)[0x7fb6ff72011c]
+/usr/lib/x86_64-linux-gnu/libpython2.7.so.1.0(PyEval_EvalFrameEx+0x6ffd)[0x7fb6ff5e8f5d]
+/usr/lib/x86_64-linux-gnu/libpython2.7.so.1.0(PyEval_EvalCodeEx+0x85c)[0x7fb6ff72011c]
+/usr/lib/x86_64-linux-gnu/libpython2.7.so.1.0(PyEval_EvalCode+0x19)[0x7fb6ff5e1de9]
+/usr/lib/x86_64-linux-gnu/libpython2.7.so.1.0(PyRun_StringFlags+0x76)[0x7fb6ff65c236]
+--- END LIBC BACKTRACE ---
